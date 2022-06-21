@@ -1677,7 +1677,7 @@ dfn{
   font-family:Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size:1.06rem;
   line-height:1.5;
-  background-color:#f0f0f0;
+  background-color:#122e51;
 }
 @media all and (min-width: 40em){
   .usa-banner{
@@ -1693,7 +1693,7 @@ dfn{
 
 .usa-banner__header,
 .usa-banner__content{
-  color:#1b1b1b;
+  color:#FFF;
 }
 
 .usa-banner__content{
