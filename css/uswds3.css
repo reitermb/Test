@@ -1894,7 +1894,7 @@ dfn{
 .usa-banner__button{
   -moz-osx-font-smoothing:inherit;
   -webkit-font-smoothing:inherit;
-  color:#005ea2;
+  color:#fff;
   text-decoration:underline;
   background-color:transparent;
   border:0;
@@ -1923,16 +1923,16 @@ dfn{
   width:auto;
 }
 .usa-banner__button:visited{
-  color:#54278f;
+  color:#fff;
 }
 .usa-banner__button:hover{
-  color:#1a4480;
+  color:#fff;
 }
 .usa-banner__button:active{
-  color:#162e51;
+  color:#fff;
 }
 .usa-banner__button:focus{
-  outline:0.25rem solid #2491ff;
+  outline:0.25rem solid #fff;
   outline-offset:0;
 }
 .usa-banner__button:hover, .usa-banner__button.usa-button--hover, .usa-banner__button:disabled:hover, .usa-banner__button:disabled.usa-button--hover, .usa-banner__button.usa-button--disabled:hover, .usa-banner__button.usa-button--disabled.usa-button--hover, .usa-banner__button:active, .usa-banner__button.usa-button--active, .usa-banner__button:disabled:active, .usa-banner__button:disabled.usa-button--active, .usa-banner__button.usa-button--disabled:active, .usa-banner__button.usa-button--disabled.usa-button--active, .usa-banner__button:disabled:focus, .usa-banner__button:disabled.usa-focus, .usa-banner__button.usa-button--disabled:focus, .usa-banner__button.usa-button--disabled.usa-focus, .usa-banner__button:disabled, .usa-banner__button.usa-button--disabled{
@@ -1943,19 +1943,19 @@ dfn{
   text-decoration:underline;
 }
 .usa-banner__button:disabled, .usa-banner__button.usa-button--disabled{
-  color:#c9c9c9;
+  color:#fff;
 }
 .usa-banner__button.usa-button--hover{
-  color:#1a4480;
+  color:#fff;
 }
 .usa-banner__button.usa-button--active{
-  color:#162e51;
+  color:#fff;
 }
 .usa-banner__button:visited{
-  color:#54278f;
+  color:#fff;
 }
 .usa-banner__button:hover, .usa-banner__button:active{
-  color:#1a4480;
+  color:#fff;
 }
 @media all and (max-width: 39.99em){
   .usa-banner__button{
@@ -1964,7 +1964,7 @@ dfn{
 }
 @media all and (min-width: 40em){
   .usa-banner__button{
-    color:#005ea2;
+    color:#fff;
     position:static;
     bottom:auto;
     left:auto;
@@ -1986,7 +1986,7 @@ dfn{
   @supports ((-webkit-mask: url("")) or (mask: url(""))){
     .usa-banner__button::after{
       background:none;
-      background-color:#005ea2;
+      background-color:#fff;
       -webkit-mask:url("../img/usa-icons/expand_more.svg") no-repeat center/contain;
               mask:url("../img/usa-icons/expand_more.svg") no-repeat center/contain;
     }
@@ -1996,13 +1996,13 @@ dfn{
   }
   .usa-banner__button:hover::after{
     content:"";
-    background-color:#1a4480;
+    background-color:#fff;
   }
   .usa-banner__button:visited{
-    color:#54278f;
+    color:#fff;
   }
   .usa-banner__button:hover, .usa-banner__button:active{
-    color:#1a4480;
+    color:#fff;
   }
   .usa-banner__button:after{
     position:absolute;
