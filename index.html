@@ -129,23 +129,79 @@
       >
       <h1 id="tdp-update-month">TDP Project Update - August 2022</h1>
 
-<p class="usa-intro">The TANF Data Portal Pilot kicked off earlier this month in time to handle the Fiscal Year 2022 Quarter 3 data submission for eleven participating TANF programs!</p>
+      <h1 id="tdp-update-month">TDP Project Update - August 2022</h1>
 
-<h2 id="the-pilot-program">The Pilot Program</h2>
+      <p class="usa-intro">The TANF Data Portal Pilot kicked off earlier this month in time to handle the Fiscal Year 2022 Quarter 3 data submission for eleven  TANF grantees!</p>
 
-<p>The purpose of the pilot program was centered around core TDP functionality, the ability to create an account, receive access from OFA admins, and ultimately submit quarterly TANF transmission files inside the portal. Testing these core functions with a small selection of grantees was aimed not only at ensuring they worked when they needed to—with real data on a wide variety of computer setups—but to validate that <em>how</em> those functions work in TDP are intuitive and a strong foundation to build all future functionality on top of.</p>
+      <h2 id="the-pilot-program">The Pilot Program</h2>
 
-<p>By all our measures the pilot was a success. Participants were able to access TDP and navigate the process of submitting their data—not to mention able to provide us with insights and feedback that will be instrumental in enhancing this and all future versions of TDP.</p>
+      <p>The purpose of the pilot program was centered around core TDP functionality, the ability to:
 
-<h2 id="knowledge-center">The TDP Knowledge Center</h2>
+      - Create an account,
+      - Request and receive access to TDP, and
+      - Submit quarterly TANF transmission files inside the portal.
 
-<p>In addition to TDP itself, we also launched a Knowledge Center in paralell to the pilot program—a resource documenting all things How-To-TDP; from creating an account to resubmitting data. You can access it right now at <a href="https://tdp-project-updates.app.cloud.gov/knowledge-center/">https://tdp-project-updates.app.cloud.gov/knowledge-center/</a>. As we move forward to build additional value into TDP we'll be keeping the Knowledge Center updated with release notes detailing all the new features being added and associated how-to articles.</p>
+      Testing these core functions with a small sample of grantees was aimed not only at ensuring these worked properly—with real data on a wide variety of computer setups—but to validate that <em>how</em> those functions work in TDP are intuitive and a strong foundation to build all future functionality on top of.</p>
 
-<h2 id="whats-next">What's Next</h2>
 
-<p>The way we've engineered TDP means that now we've launched it with its first users it's going to continue to be available to our current pilot group from here on out (excepting short instances of downtime now and then so that we can conduct system maintenance). We're also eager to begin expanding the size of that pilot group to allow more TANF programs to benefit from it and —as always—to line up opportunities for us to hear directly from them to continue channeling feedback into making TDP the best tool it can be!</p>
+      <h3 id="who">Who participated in the Pilot</h3>
+      <p>We recruited grantees based primarily on the following criteria:</p>
+      <ul>
+      <li>Interest in participating in the pilot</li>
+      <li>Current reliance on email transmission (Tribes)</li>
+      <li>Recent submission of partial data</li>
+      <li>Not submitting SSP data</li>
+      </ul>
 
-<p>If you're interested in gaining access to TDP in time to use it for the next quarterly data submission deadline this November we'd love to hear from you! Please reach out to <a href="mailto:mreiter@goraft.tech">mreiter@goraft.tech</a> to learn more or if the available slots fit your schedule you can book office hours below!</p>
+
+      <p>Aligned to those criteria we spoke to participants representing:</p>
+
+      <ul>
+      <li>5 Tribes (3 in moderated sessions)</li>
+      <li>6 States (3 in moderated sessions)</li>
+      </ul>
+
+
+      <h3 id="how-it-went">Insights from the Pilot</h3>
+      <p>By all our measures the pilot was a success. Participants were able to access TDP and navigate the process of submitting their data—not to mention able to provide us with insights and feedback that will be instrumental in enhancing this and all future versions of TDP. While our top level findings focus on areas where we can improve TDP it's also worth mentioning that we received enthusiasticly positive feedback from participating grantees as well, a great sentiment to hear even in these early versions of TDP.</p>
+
+      <p>Below are some highlights from the full synthesis which can be found in the project repo.</p>
+
+      <h4 id="login-and-auth">Areas of the login and authentication experience may introduce friction for some grantees</h4>
+      <p>The TANF Data Portal utilizes Login.gov for account access. While our ability to change how it functions is limited, it does represent an important part of the TDP experience and should be considered as we expand access to TDP and continue to enhance the Knowledge Center. Identified areas where documentation might be enhanced include:</p>
+      <ul>
+          <li>Direction to check spam folders if confirmation emails don't show up</li>
+          <li>Direction to resend authentication codes if text messages don't promptly appear</li>
+          <li>Additional detail on how to configure various methods of 2 Factor Authentication</li>
+      </ul>
+
+
+      <h4 id="terminology">Some terminology used to identify sections and certain UI elements lead to friction among some participants</h4>
+      <p>Moderated testing re-emphasized past findings that certain terms have different meanings to different grantees informed both by past experiences with the TANF program and software tools used to prepare TANF data. These differing meanings proved a surmountable obstacle during the pilot but was associated with some degree of friction or decreased confidence in what TDP was asking of them. These areas included:</p>
+      <ul>
+          <li>"Closed Cases" vs "Negative Cases" (an older term many grantees are familiar with from past documentation and TANF data tools</li>
+          <li>The option to upload statrum data was confusing for grantees who provide universe data</li>
+      </ul>
+
+      <h4 id="resolution">Most participants used TDP at resolutions that obscured submission status from view</h4>
+      <p>
+          The majority of moderated participants weren't immediately able to see the status of their submission appear after submitting their files. This was a useful reminder of the resolutions most commonly used by grantees and the importance of affordances we should make sure to build in such as one that would scroll the interface to ensure any alerts that pop up are visible on-screen.
+      </p>
+
+      <button>
+          View Full Synthesis
+      </button>
+
+
+      <h2 id="knowledge-center">The TDP Knowledge Center</h2>
+
+      <p>In addition to TDP itself, we also launched a Knowledge Center in paralell to the pilot program—a resource documenting all things How-To-TDP; from creating an account to resubmitting data. You can access it right now at <a href="https://tdp-project-updates.app.cloud.gov/knowledge-center/">https://tdp-project-updates.app.cloud.gov/knowledge-center/</a>. As we move forward to build additional value into TDP we'll be keeping the Knowledge Center updated with release notes detailing all the new features being added and associated how-to articles.</p>
+
+      <h2 id="whats-next">What's Next</h2>
+
+      <p>The way we've engineered TDP means that now we've launched it with its first users it's going to continue to be available to our current pilot group from here on out (excepting short instances of downtime now and then so that we can conduct system maintenance). We're also eager to begin expanding the size of that pilot group to allow more TANF programs to benefit from it and —as always—to line up opportunities for us to hear directly from them to continue channeling feedback into making TDP the best tool it can be!</p>
+
+      <p>If you're interested in gaining access to TDP in time to use it for the next quarterly data submission deadline this November we'd love to hear from you! Please reach out to <a href="mailto:mreiter@goraft.tech">mreiter@goraft.tech</a> to learn more or if the available slots fit your schedule you can book office hours below!</p>
 
 
       </main>
