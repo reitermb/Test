@@ -21,7 +21,7 @@ const chart = Highcharts.chart('container', {
 
 
   title: {
-    text: 'Highcharts Sankey Diagram'
+    text: 'Pilot Participants'
   },
   accessibility: {
     point: {
@@ -31,11 +31,14 @@ const chart = Highcharts.chart('container', {
   series: [{
     keys: ['from', 'to', 'weight'],
     data: [
+      ['6 States', '2.0 Pilot', 6],
+      ['5 Tribes', '2.0 Pilot', 5],
       ['2.0 Pilot', '2.2 Expansion', 11],
-      ['4 new states', '2.2 Expansion', 4],
-      ['4 new Tribes', '2.2 Expansion', 4],
-      ['2 Territories', '2.2 Expansion', 2],
-  
+      ['Contacted States', 'Contacted for 2.2 Expansion', 4],
+      ['Contacted Tribes', 'Contacted for 2.2 Expansion', 4],
+      ['Contacted Territories', 'Contacted for 2.2 Expansion', 2],
+            ['Contacted for 2.2 Expansion', '2.2 Expansion', 5],
+
     ],
     type: 'sankey',
     name: 'Sankey demo series'
@@ -232,29 +235,7 @@ const chart = Highcharts.chart('container', {
       <h2 id="the-pilot-expansion">The Pilot Expansion</h2>
       <div style="min-height: 22px;"></div>
 
-      <blockquote style="margin-left: 0px; padding-left: 10px; padding-bottom: 10px; border-color: blue; border-left: solid 3px #005ea2; font-weight: 900;"><span style="font-size: 40px; color: #005ea2; position: relative; right: 10px; padding-left: 10px;">“</span>"Other than the one dislike about the search function, I like this new system." ~Tribe
-
-<span style="font-size: 40px; position: relative; top: 30px; left: 10px; color: #005ea2">”</span></blockquote>
-
-<figure class="highcharts-figure">
-  <div id="container"></div>
-  <p class="highcharts-description">
-    Sankey charts are used to visualize data flow and volume
-    between nodes. The wider lines indicate larger volumes.
-  </p>
-</figure>
-
-
-      <p>The purpose of the pilot program was centered around core TDP functionality, the ability to:
-
-      - Create an account,
-      - Request and receive access to TDP, and
-      - Submit quarterly TANF transmission files inside the portal.
-
-      Testing these core functions with a small sample of grantees was aimed not only at ensuring these worked properly—with real data on a wide variety of computer setups—but to validate that <em>how</em> those functions work in TDP are intuitive and a strong foundation to build all future functionality on top of.</p>
-
-
-      <h3 id="who">Who participated in the Pilot</h3>
+      <h3 id="who">Who participated in the expansion</h3>
       <div style="min-height: 22px;"></div>
 
       <p>We recruited grantees based primarily on the following criteria:</p>
@@ -262,11 +243,25 @@ const chart = Highcharts.chart('container', {
       <li>Interest in participating in the pilot</li>
       <li>Current reliance on email transmission (Tribes)</li>
       <li>Recent submission of partial data</li>
-      <li>Not submitting SSP data</li>
+      <li>Submits SSP data</li>
       </ul>
 
+<figure class="highcharts-figure">
+  <div id="container"></div>
 
-      <h3 style="margin-top: 16px;">November 8th 2022 (v 2.1 & 2.2)</h3>
+</figure>
+
+
+
+
+
+      <h3 id="what">What we tested</h3>
+      <div style="min-height: 22px;"></div>
+
+      <p>Based on the task scenarios defined for v2.2 the pilot expansion program was a success. Grantees that participated were able to complete all task scenarios measured in v2.0 in addition to new released features for inline email notifications and being able to submit TANF and/or SSP-MOE data files. In addition, for those in our moderated sessions we were able to observe and record the efficiencies and perceived shortcomings of the current platform to help inform future iterations. While our top level findings focus on observed gaps to improve TDP, we continue to receive positive feedback on TDP’s impact from participating grantees.</p>
+      <div style="min-height: 22px;"></div>
+
+      <h3 style="margin-top: 16px;">Newly Tested Functionality (v 2.1 & 2.2)</h3>
       <!-- <p style="margin-top: 16px;">Version 2.1 and 2.2 are aimed at making it possible to expand our pilot program to more TANF programs across the country by improving TDP's support for data submission and making the system itself more communicative.</p> -->
 
       <h4 style="margin-top: 16px; color: #595959;">Added:</h4>
@@ -291,7 +286,6 @@ const chart = Highcharts.chart('container', {
   </div>
   <div class="usa-icon-list__content">
     <h5 class="usa-icon-list__title">
-      Email notifications
     </h5>
     <p>
       TDP now sends out email notifications for key events to keep you informed about the status of your account during the account creation process and the status of your submitted data files.
@@ -306,22 +300,37 @@ const chart = Highcharts.chart('container', {
 
 
 
-      <a href="https://github.com/raft-tech/TANF-app/blob/develop/docs/User-Experience/Research-Syntheses/2022%2C%20Fall%20-%20TDP%202.2%20Pilot%20Expansion.md" class="usa-button">
-<span style="color: white;">View Full Synthesis</span>      </a>
+
+
+
+
+
+      <h3 id="findings">Our findings</h3>
+      <div style="min-height: 22px;"></div>
+
+
+            <a href="https://github.com/raft-tech/TANF-app/blob/develop/docs/User-Experience/Research-Syntheses/2022%2C%20Fall%20-%20TDP%202.2%20Pilot%20Expansion.md" class="usa-button">
+      <span style="color: white;">View Full Synthesis</span>      </a>
+      <div style="min-height: 22px;"></div>
+
+<blockquote style="margin-left: 0px; padding-left: 10px; padding-bottom: 10px; border-color: blue; border-left: solid 3px #005ea2; font-weight: 900;"><span style="font-size: 40px; color: #005ea2; position: relative; right: 10px; padding-left: 10px;">“</span>Other than the one dislike about the search function, I like this new system.
+<span style="font-size: 40px; position: relative; top: 30px; left: 10px; color: #005ea2">”</span></blockquote>
+
+
+<blockquote style="margin-left: 0px; padding-left: 10px; padding-bottom: 10px; border-color: blue; border-left: solid 3px #005ea2; font-weight: 900;"><span style="font-size: 40px; color: #005ea2; position: relative; right: 10px; padding-left: 10px;">“</span>It was odd that the last quarter's reports were in the spaces for the current quarter. I wasn't sure what to do, so I click on the change reports. I think the new quarter spaces should be empty
+<span style="font-size: 40px; position: relative; top: 30px; left: 10px; color: #005ea2">”</span></blockquote>
+
+<blockquote style="margin-left: 0px; padding-left: 10px; padding-bottom: 10px; border-color: blue; border-left: solid 3px #005ea2; font-weight: 900;"><span style="font-size: 40px; color: #005ea2; position: relative; right: 10px; padding-left: 10px;">“</span>I didn't see the banner that let me know it was successfully uploaded this time (probably due to the error). I look for that banner - it's important for me to know I've completed the process successfully
+<span style="font-size: 40px; position: relative; top: 30px; left: 10px; color: #005ea2">”</span></blockquote>
+
+
 <div style="min-height: 22px;"></div>
-
-
-
-
-      <h2 id="whats-next">What's Next</h2>
-      <div style="min-height: 22px;"></div>
-
-
-      <p>The way we've engineered TDP means that now we've launched it with its first users it's going to continue to be available to our current pilot group from here on out (excepting short instances of downtime now and then so that we can conduct system maintenance). We're also eager to begin expanding the size of that pilot group to allow more TANF programs to benefit from it and —as always—to line up opportunities for us to hear directly from them to continue channeling feedback into making TDP the best tool it can be!</p>
-      <div style="min-height: 22px;"></div>
-
-
-      <p>If you're interested in gaining access to TDP in time to use it for the next quarterly data submission deadline this November we'd love to hear from you! Please reach out to <a href="mailto:mreiter@goraft.tech">mreiter@goraft.tech</a> to learn more or if the available slots fit your schedule you can book office hours below!</p>
+<div style="min-height: 22px;"></div>
+<div style="min-height: 22px;"></div>
+<div style="min-height: 22px;"></div>
+<div style="min-height: 22px;"></div>
+<div style="min-height: 22px;"></div>
+<div style="min-height: 22px;"></div>
 
 
       </main>
