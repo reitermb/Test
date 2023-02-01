@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>TDP — About Email Notifications</title>
+    <title>TDP — View Submission History</title>
     <link rel="stylesheet" href="../css/uswds3.css" />
     <link rel="icon" type="image/x-icon" href="../img/favicons/gov-favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,7 +102,7 @@
                       <path
                         fill="#000000"
                         fill-rule="evenodd"
-                        d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
+                        d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4h3a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
                       />
                     </svg> </span
                   >) or <strong>https://</strong> means you’ve safely connected to
@@ -170,21 +170,25 @@
         </li>
 
         <li class="usa-sidenav__item">
-        <a href="./about-email-notifications.html" class="usa-current" aria-current="page">About Email Notifications</a>
+        <a href="./about-email-notifications.html">About Email Notifications</a>
         </li>
-        </ul>
-      </li>
+
+      </ul>
+</li>
 
 
         <li class="usa-sidenav__item">
         <a href="uploading-data.html">Submitting Data to TDP</a>
         </li>
-
+        <ul class="usa-sidenav__sublist">
+          <li class="usa-sidenav__item">
+          <a href="./view-submission-history.html" class="usa-current" aria-current="page">View Submission History</a>
+          </li>
+        </ul>
 
         <li class="usa-sidenav__item">
-        <a href="complete-resubmissions.html">Resubmitting Complete Data Files</a>
+          <a href="complete-resubmissions.html">Resubmitting Complete Data Files</a>
         </li>
-
         <li class="usa-sidenav__item">
         <a href="managing-your-account.html">Managing Your Account</a>
         </li>
@@ -221,18 +225,22 @@
               </li>
 
               <li class="usa-sidenav__item">
-                <a href="./about-email-notifications.html" class="usa-current" aria-current="page">About Email Notifications</a>
+              <a href="./about-email-notifications.html">About Email Notifications</a>
               </li>
 
             </ul>
           </li>
 
-
+            <li class="usa-sidenav__item">
+              <a href="uploading-data.html">Submitting Data to TDP</a>
+              </li>
+              <ul class="usa-sidenav__sublist">
+                <li class="usa-sidenav__item">
+                <a href="./view-submission-history.html" class="usa-current" aria-current="page">View Submission History</a>
+                </li>
+              </ul>
 
               <li class="usa-sidenav__item">
-                <a href="uploading-data.html">Submitting Data to TDP</a>
-              </li>
-      <li class="usa-sidenav__item">
                 <a href="complete-resubmissions.html">Resubmitting Complete Data Files</a>
               </li>
 
@@ -253,82 +261,77 @@
 
       <main
         class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs"
-        id="main-content"
-      >
-        <h1>About Email Notifications</h1>
-
-
+        id="main-content">
+        <h1>View Submission History</h1>
         <div style="min-height: 22px;"></div>
 
         <p class="usa-intro">
-        Email notifications will be sent out automatically to alert you when certain key actions are taken in the TANF Data Portal. Below is a sequence of email notifications that you may expect to receive when interacting with the TANF Data Portal.
+        The Submission History tab within the TANF Data Portal (TDP) will allow you to be able to access all of your past submitted data files.
         </p>
+        <div style="min-height: 22px;"></div>
 
-        <ol class="usa-process-list">
-          <li class="usa-process-list__item">
-            <h2 class="usa-process-list__heading">Access Request Submitted</h2>
-            <p class="margin-top-05">
-              You will receive a notification email from <em>no-reply@tanfdata.acf.hhs.gov</em> when your access request has been submitted. Please allow up to 1 business day for OFA admins to review your request.
-              <div style="min-height: 22px;"></div>
-              <a href="../img/getting-started/access-request-submitted.png" data-lity data-lity-desc="Access Request Submitted Email">
-              <img src="../img/getting-started/access-request-submitted.png" alt="Access Request Submitted Email">
-                </a>
-            </p>
-          </li>
+  <h2>How to view submission history</h2>
+  <div style="min-height: 22px;"></div>
 
-          <li class="usa-process-list__item">
-            <h2 class="usa-process-list__heading">Access Request Status</h2>
-            <p>
-              Once your request for access has been reviewed, you will receive another email notification from <em>no-reply@tanfdata.acf.hhs.gov</em> with the status of your request.
-              <div style="min-height: 22px;"></div>
-              We'll also notify you if your request is denied. Should this happen and you believe it to be in error please let us know by reaching out to TDP support at <a href="mailto:tanfdata@acf.hhs.gov">TANFdata@acf.hhs.gov.</a>.
-              <div style="min-height: 22px;"></div>
-              <a href="../img/getting-started/access-request.png" data-lity data-lity-desc="Access Request Approved or Denied Emails">
-              <img src="../img/getting-started/access-request.png" alt="Access Request Approved or Denied Emails">
-              </a>
-            </p>
-          </li>
+  <ol class="usa-process-list">
+    <li class="usa-process-list__item">
+      <h3 class="usa-process-list__heading">Choose the time frame you would like to view</h3>
+  <br>
+      <p class="margin-top-05">
+        On the Data Files page you’ll be able to fill out the search fields for ‘File Type’ (if your program submits both TANF & SSP data), ‘Fiscal Year’, and ‘Quarter’ to identify which data you’ll be uploading. After searching for the appropriate reporting period, a new area of the page will appear below the search button.</p><div style="min-height: 22px;"></div>
+      <a href="../img/data-files/2-search-component.png" data-lity data-lity-desc="Data Files search with emphasis on File Type, Fiscal Year, and Quarter fields as well as the Search button">
+      <img src="../img/data-files/2-search-component.png" alt="Data Files search with emphasis on File Type, Fiscal Year, and Quarter fields as well as the Search button">
+        </a>
 
-          <li class="usa-process-list__item">
-            <h2 class="usa-process-list__heading">Data Submitted by Section</h2>
-            <p>
-              Upon successful submission of your data files you will also receive an email confirmation for each section from <em>no-reply@tanfdata.acf.hhs.gov</em>.
-                <br>
-              <a href="../img/getting-started/data-submitted.png" data-lity data-lity-desc="Data Submitted by Section">
-              <img src="../img/getting-started/data-submitted.png" alt="Data Submitted by Section">
-              </a>
-            </p>
-          </li>
+    </li>
 
-          <li class="usa-process-list__item">
-            <h2 class="usa-process-list__heading">Inactive Account Notice</h2>
-            <p>
-              If an account has not been logged into the TANF Data Portal for 180 days, the process to deactivate the account will be set in motion.
-              <div style="min-height: 22px;"></div>
-              Before any action is taken, TANF Data Portal will send multiple email notifications to notify you beginning 10 days, 3 days and then 1 day prior to the deactivation date.
-              <div style="min-height: 22px;"></div>
-            <a href="../img/getting-started/inactive-account.png" data-lity data-lity-desc="Example of the emails for inactive accounts">
-            <img src="../img/getting-started/inactive-account.png" alt="Example of the emails for inactive accounts">
-            </a>
-            </p>
-          </li>
+    <li class="usa-process-list__item">
+      <h3 class="usa-process-list__heading">Upload your files</h3>
+  <br>
+      <p>You can either drag each file into their appropriate sections (Active, Closed, Aggregate, and Stratum) or click ‘Choose from folder’ on a section to browse your computer for the file.</p>
+      <a href="../img/data-files/3-upload-buckets.png" data-lity data-lity-desc="Data Files upload components for Fiscal Year 2021 — Quarter 1 (October-December) including 'buckets' for Active, Closed, Aggregate, and Stratum sections">
+      <img src="../img/data-files/3-upload-buckets.png" alt="Data Files upload components for Fiscal Year 2021 — Quarter 1 (October-December) including 'buckets' for Active, Closed, Aggregate, and Stratum sections">
+        </a>
+        <p>Note: Section 4 is only required for grantees who have elected to submit a stratified sample of families served in their jurisdiction rather than data for all families.</p><br>
 
-          <li class="usa-process-list__item">
-            <h2 class="usa-process-list__heading">Account is Deactivated</h2>
-            <p>
-              After 180 days of no activity on the TANF Data Portal, the account is deactivated. If this is a mistake or if you have any questions about your TDP account, please reach out to the TDP Admin team at <a href="mailto:tanfdata@acf.hhs.gov">TANFdata@acf.hhs.gov</a>.
-              <div style="min-height: 22px;"></div>
-            <a href="../img/getting-started/account-is-deactivated.png" data-lity data-lity-desc="Example of the email for account is deactivated">
-            <img src="../img/getting-started/account-is-deactivated.png" alt="Example of the email for account is deactivated">
-            </a>
-            </p>
-          </li>
+    </li>
 
-        </ol>
-        <h2>Not seeing email notifications?</h2>
-        <p>
-          We make every effort to ensure that the email notifications are delivered. If you do not see the email in your inbox, please check your "junk mail" or "spam" folder and add <em>no-reply@tanfdata.acf.hhs.gov</em> to your Safe Sender List.
-        </p>
+    <li class="usa-process-list__item">
+      <h3 class="usa-process-list__heading">Submit your files</h3>
+  <br>
+      <p>After uploading the files you want to submit, click the ‘Submit Data Files’ button. You should see a confirmation that your sections were submitted!</p>
+      <a href="../img/data-files/4-success-message.png" data-lity data-lity-desc="Upload components showing success message above upload components reading 'Successfully submitted section(s): 1 on Wed Jun 15 2022'">
+      <img src="../img/data-files/4-success-message.png" alt="Upload components showing success message above upload components reading 'Successfully submitted section(s): 1 on Wed Jun 15 2022'">
+      </a>
+      <p>Upon successful submission of your data files you will also receive an email confirmation from <em>no-reply@tanfdata.acf.hhs.gov</em> (example below).<p>
+      <a href="../img/getting-started/data-submitted.png" data-lity data-lity-desc="Email example of the successfully submitted data files by section">
+      <img src="../img/getting-started/data-submitted.png" alt="Email example of the successfully submitted data files by section">
+      </a>
+      <p>In the future, TDP will provide more immediate reports about your transmitted data. For now, please expect to receive the transmission reports you’re used to receiving via email within 48 hours of data submission. Note that Tribal TANF grantees do not receive transmission reports by email.</p>
+  </ol>
+
+  <h2>How to retrieve your submitted data</h2>
+  <div style="min-height: 22px;"></div>
+  <p>To access a file you’ve uploaded to TDP, you can click the ‘Download Section <#>’ button below any submitted file. For now, this will provide you with the most recent version of that file (if you’ve submitted more than one). Note: TDP will auto-rename files to specify the fiscal period and section (e.g. 2021.Q1.Active Case Data), so depending on your original file-naming conventions, the files you download may have a different name.</p>
+  <div style="min-height: 22px;"></div>
+  <a href="../img/data-files/5-download-function.png" data-lity data-lity-desc="Upload component with file attached, emphasis on the 'Download Section 1' button below which downloads the most recent version of the file attached to it">
+  <img src="../img/data-files/5-download-function.png" alt="Upload component with file attached, emphasis on the 'Download Section 1' button below which downloads the most recent version of the file attached to it">
+  </a>
+  <p>Future versions of TDP will include a ‘Submission History’ page where you’ll be able to access all of your past submitted files directly. Until then, if you need to access an older version of the file for the specified fiscal period, please reach out to directly to <a href = "mailto: tanfdata@acf.hhs.gov">tanfdata@acf.hhs.gov.</a></p>
+
+
+  <div style="min-height: 22px;"></div>
+
+  <h2>How to resubmit your data</h2>
+  <div style="min-height: 22px;"></div>
+  <p>If you need to replace or revise any file submitted to TDP, you can do so either by dragging a new file into the section(s) you’d like to resubmit or by clicking ‘Change File’. Once the new file(s) are selected, make sure to click the ‘Submit Data Files’ button again to save your changes.</p>
+  <div style="min-height: 22px;"></div>
+
+  <a href="../img/data-files/6-change-file.png" data-lity data-lity-desc="Upload component with emphasis on the 'Change File' button within it">
+  <img src="../img/data-files/6-change-file.png" alt="Upload component with emphasis on the 'Change File' button within it">
+    </a>
+
+
 
       </main>
     </div>
