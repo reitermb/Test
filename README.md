@@ -24,5 +24,5 @@ While the project updates site is stored in the TANF-app repo, it is not a part 
 ## Dependencies
 
 - [USWDS](https://cdnjs.com/libraries/uswds) — While available via CDN, we currently store our own (slightly customized) version of USWDS locally ([js](https://github.com/raft-tech/TANF-app/tree/develop/product-updates/js) and [css](https://github.com/raft-tech/TANF-app/tree/develop/product-updates/css))
-- [jQuery](https://cdnjs.com/libraries/jquery)
+- [jQuery](https://cdnjs.com/libraries/jquery) — Jquery is a javascript library that drives all javascript functionality that USWDS's javascript doesn't have built in. This includes making other plugins like Lity function
 - [Lity](https://cdnjs.com/libraries/lity) — Lity is an open-source accessible lightbox plugin. While it is also available via CDN we store it [here](https://github.com/raft-tech/TANF-app/tree/develop/product-updates/dist))
