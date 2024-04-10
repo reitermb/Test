@@ -400,14 +400,14 @@
     <tr>
       <th scope="row"><img src="../img/alerts/error.svg" alt="" aria-hidden="true" style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 5px;">Partially accepted with errors</th>
       <td>
-        Your file was unable to fully process. Cases and records within your data may contain errors.
+        Your file was unable to fully process. This means that some of the records in the file were not accepted, and some records were accepted but contain errors. 
       </td>
 
     </tr>
        <tr>
       <th scope="row"><img src="../img/alerts/cancel.svg" alt="" aria-hidden="true" style="width: 24px; height: 24px; position: relative; top: 6px; margin-right: 5px;">Rejected</th>
       <td>
-        Your file could not be processed and likely contains errors relating to formatting and file structure.
+        Your file could not be processed and likely contains errors relating file structure/record layout.
       </td>
 
     </tr>
@@ -428,14 +428,14 @@
     <tr>
       <th scope="row">Cases Without Errors</th>
       <td>
-        The total number of TANF Cases in your file that do not have any errors associated with them.
+        The total number of unique Cases for a given reporting month in your file that do not have any errors associated with them.
       </td>
 
     </tr>
     <tr>
       <th scope="row">Cases With Errors</th>
       <td>
-        The total number of TANF Cases in your file that have one or more error associated with them. This likely indicates problems with your data such as inconsistent values or using values outside those defined in the <a href="">TANF/SSP Coding Instructions</a> or <a href="">Tribal TANF Coding Instructions</a>.
+        The total number of unique Cases for a given reporting month in your file that have one or more error associated with them. This likely indicates problems with your data such as values outside those defined in the <a href="">TANF/SSP Coding Instructions</a> or <a href="">Tribal TANF Coding Instructions</a>.
       </td>
 
     </tr>
@@ -449,7 +449,7 @@
     <tr>
       <th scope="row">Total Errors</th>
       <td>
-        Since section 3 and 4 data contains aggregate values in one record rather than TANF case data with many records, TDP can only provide a higher level error count. Errors here likely relate to inconsistencies between your Active and Closed Caseloads and your aggregate reporting or to issues with layout and coding like Records Unable to Process.
+        Since section 3 and 4 data contains aggregate values in one record rather than case data with many records, TDP can only provide a higher level error count. Errors here likely relate to values outside those defined in the <a href="">TANF/SSP Coding Instructions</a> or <a href="">Tribal TANF Coding Instructions</a> and/or inconsistencies in the values between related elements for a given reporting month. 
       </td>
 
     </tr>
