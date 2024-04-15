@@ -364,7 +364,7 @@
          </p>
        <h3>Cases</h3>
        <p>A TANF case is a family grouping of TANF recipients. Every individual within a given case will share the same case number
-        as one of their primary identifiers. Every case contains multiple types of records to track everything from characteristics of the 
+        as one of their primary identifiers. Every case contains a variety of data to track everything from characteristics of the 
         family itself to individual-level information on its members. 
        </p>
          <div style="min-height: 22px;"></div>
@@ -374,10 +374,20 @@
           </p>
             <div style="min-height: 22px;"></div>
           <h4>Items</h4>
-            <div style="min-height: 22px;"></div>
-          <h4>Item Values</h4>
+          <p>Items (sometimes referred to as data elements) are the building blocks of every record and a core part of most of the errors that you
+            may encounter in error reports from TDP. Each item has a name and a number that allow you to look them up in the coding instruction documents; which
+            list all acceptable values of each item, their meanings, and guidelines for their use. Some items have a static list of acceptable values, such as the
+            New Applicant item where the acceptable values are either 1 (Yes, a newly approved TANF application) or 2 (No, an existing recipient). Others, like Date
+            of Birth contain data directly describing recipients or your overall caseload.
+          </p>
             <div style="min-height: 22px;"></div>
       <h4>Header and Trailer</h4>
+      <p>The Header and Trailer refer to special records at the beginning and end of every data file. The Header communicates key information to TDP about your file that
+        helps the system correctly process it, including: fiscal year and quarter, program type, and section. The Trailer contains information about the number of records
+        in your file. Typically both these records will be produced automatically as part of your current process of exporting data files. However, TDP does require that 
+        the Update Indicator, one of the items making up the Header record, is set to a value of "D" (meaning Delete) to help ensure that data you're resubmitting to TDP 
+        is complete rather than partial. <a href="complete-resubmissions.html">Read more about how to submit complete data</a>.
+      </p>
         <div style="min-height: 22px;"></div>
 
           <div style="min-height: 22px;"></div>
@@ -391,7 +401,17 @@
 
 <h2>Understanding Errors</h2>
   <div style="min-height: 22px;"></div>
-      <p>.</p>
+      <p>TDP's error reports are crafted to provide you with all the information you need to quickly identify which of your cases have errors
+        associated with them, what the problem is, and which items to look up in the coding instruction documents to help you correct that problem.
+        The complexity of errors will vary depending on the items they relate to and the complexity of that data. For instance, if a space or a letter
+        found its way into a zipcode within your file you might see an error saying "Item 17 (Zipcode) must be numeric.". A more complex example
+        could be "If Item 49 (Work Participation Status) = 99 or Blank, Item 30 (Familiy Affiliation - Adult) must = 2-5". <br> Errors like this might 
+        require consulting the coding instructions for multiple items (and their respective values) to determine the proper correction. Errros that 
+        begin with "If" always refer to values that are present in your data; in this example the error is communicating that Item 49 on one of your 
+        records is either 99 or was left blank, either of which create a conflict with the values of Item 30. This kind of problem could indicate a problem
+        with the value of Item 49 or the value of Item 30. Determining which one should be changed will require consulting the coding instructions and your own 
+        data to determine where the mistake was made and what the corrected data should reflect.
+      </p>
 
           <div style="min-height: 22px;"></div>
 
