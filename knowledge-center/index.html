@@ -355,6 +355,7 @@
     </li>
       </ul>
 
+
         <h4 style="margin-top: 16px; color: #595959;">Added:</h4>
         <ul class="usa-icon-list">
           <li class="usa-icon-list__item" style="margin-top: 16px;">
@@ -368,29 +369,26 @@
               <p>Error messages regarding <a href="https://tdp-project-updates.app.cloud.gov/knowledge-center/viewing-error-reports.html"> values across related records</a> now include the associated item number(s), item name(s), and row number to help you identify records that have been detected as having data quality discrepancies. </p>
             </div>
           </li>
-              </ul>   
-
+        </ul>   
         <h4 style="margin-top: 16px; color: #595959;">Changed / Fixed:</h4>
-        <ul class="usa-icon-list">
-
-    <li class="usa-icon-list__item" style="margin-top: 16px;">
-      <div class="usa-icon-list__icon text-ink">
-          <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 5px; margin-left: 5px;"/>
-      </div>
-      <div class="usa-icon-list__content">
-        <h5 class="usa-icon-list__title">
-          Error Message Language Cleanup
-        </h5>
-        <p>TDP performs validation checks across related items in a record and will generate error messages capturing instances where <a href="https://tdp-project-updates.app.cloud.gov/knowledge-center/viewing-error-reports.html">inconsistent values within the record</a> were detected. </p>
-        <p>Previous versions of these types of error messages would return the following (for example):</p>
-        <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;"><b>If</b> Cash Amount <b>:873 validator1 passed</b> then Item 21B (Cash and Cash Equivalents: Number of Months) 0 <b>is not</b> larger than 0
-        </code>
-        <p>Now, this type of error message will read:</p>
-        <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;"><b>Since Item 12</b> (Cash Amount) <b>is 100</b>, then Item 21B (Cash and Cash Equivalents: Number of Months) 0 <b>must be</b> larger than 0
-        </code>
-      </div>
-    </li>
-</ul>
+          <li class="usa-icon-list__item" style="margin-top: 16px;">
+            <div class="usa-icon-list__icon text-ink">
+                <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 5px; margin-left: 5px;"/>
+            </div>
+            <div class="usa-icon-list__content">
+              <h5 class="usa-icon-list__title">
+                Error Message Language Cleanup
+              </h5>
+              <p>TDP performs validation checks across related items in a record and will generate error messages capturing instances where <a href="https://tdp-project-updates.app.cloud.gov/knowledge-center/viewing-error-reports.html">inconsistent values within the record</a> were detected. </p>
+              <p>Previous versions of these types of error messages would return the following (for example): 
+              <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;"><b>If</b> Cash Amount <b>:873 validator1 passed</b> then Item 21B (Cash and Cash Equivalents: Number of Months) 0 <b>is not</b> larger than 0.</code>
+            </p>
+              <p>Now, this type of error message will read: 
+                <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;"><b>Since Item 12</b> (Cash Amount) <b>is 100</b>, then Item 21B (Cash and Cash Equivalents: Number of Months) 0 <b>must be</b> larger than 0.</code>
+              </p>
+            </div>
+          </li>
+        </ul>
 </ul>
 
         <hr style="border: none;
@@ -462,8 +460,6 @@
            <p>The issue has been corrected in TDP, and no changes to data are needed to resolve this.</p>
       </div>
     </li>
-
-
 
             <li class="usa-icon-list__item" style="margin-top: 16px;">
       <div class="usa-icon-list__icon text-ink">
