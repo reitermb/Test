@@ -337,6 +337,75 @@
 
         <h2>What's new in TDP</h2>
 
+        <h3 style="margin-top: 32px;">December 18th 2024 (v 3.7.X)</h3>
+        <h4 style="margin-top: 16px; color: #595959;">Changed / Fixed:</h4>
+        <ul class="usa-icon-list">
+          <li class="usa-icon-list__item" style="margin-top: 16px;">
+            <div class="usa-icon-list__icon text-ink">
+                <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 5px; margin-left: 5px;"/>
+            </div>
+            <div class="usa-icon-list__content">
+              <h5 class="usa-icon-list__title">
+                Correcting Validation Error
+              </h5>
+              <p>Based on your feedback, we identified several errors in the TDP that did not align with the coding instructions. To address this, we have revised the system checks to better conform to the guidelines.</p>
+              <p>The following deprecated indicators have been updated to accept a value of 0:</p>
+              <ul>
+                <li>Item 27: Waiver Evaluation</li>
+                <li>Item 29: TANF Family a New Child-Only Family</li>
+                <li>Item 26 AIII: Family Sanction</li>
+                <li>Item 32D: Receives Disability Benefit (AABD)</li>
+              </ul>
+            </div>
+          </li>
+        </ul>   
+        <ul class="usa-icon-list">
+          <li class="usa-icon-list__item" style="margin-top: 16px;">
+            <div class="usa-icon-list__icon text-ink">
+                <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 5px; margin-left: 5px;"/>
+            </div>
+            <div class="usa-icon-list__content">
+              <h5 class="usa-icon-list__title">
+                Error Report Improvements
+              </h5>
+              <p>In response to your questions and feedback on the high volume of errors in TDP, we've updated the error report to help make it easier to review and address data anomalies detected by the system.</p>
+              <p><b>Multi-Tab Error View:</b> When you download your error report, you will now see two tabs:</p>
+              <ul>
+                <li><code>Critical:</code> Includes only errors that prevent acceptance or impact data integrity, so you can focus on reviewing these errors, first.</li>
+                <li><code>Summary:</code> Groups all errors detected in the file by error message, month, and year with a count of how frequently the error occurs. This allows you to see the full scope of errors in a more condensed format.</li>
+              </ul>
+              <p><em>Please note:</em> This update is part of ongoing efforts to improve the accuracy and usability of the error report. More refinements are forthcoming and will be informed by user feedback. </p>
+            </div>
+          </li>
+        </ul>   
+
+        <ul class="usa-icon-list">
+          <li class="usa-icon-list__item" style="margin-top: 16px;">
+            <div class="usa-icon-list__icon text-ink">
+                <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 5px; margin-left: 5px;"/>
+            </div>
+            <div class="usa-icon-list__content">
+              <h5 class="usa-icon-list__title">
+                Validation logic related SSP family affiliation and citizenship status 
+              </h5>
+              <p>TDP was incorrectly generating the following error messages for some SSP Section 1: Active Case files:
+              </p>
+              <p>
+              <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">Since <b>Item 26</b> (Family Affiliation) is 1, then <b>Item 38</b> (Citizenship/Immigration Status) 3 must be one of (1, 2)</code>
+              </p>
+              <p>
+              <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">Since <b>Item 60</b> (Family Affiliation) is 1, then <b>Item 69</b> (Citizenship/Immigration Status) 3 must be one of (1, 2)</code>
+              </p>
+            </div>
+          </li>
+        </ul>   
+ 
+        <hr style="border: none;
+        height: 1px;
+        background: #000;
+        margin-top: 32px;
+        background: repeating-linear-gradient(90deg,#000,#000 6px,transparent 6px,transparent 12px);">
+
          <h3 style="margin-top: 32px;">October 24th 2024 (v 3.7.0)</h3>
         <h4 style="margin-top: 16px; color: #595959;">Added:</h4>
         <ul class="usa-icon-list">
@@ -402,7 +471,6 @@
     background: #000;
     margin-top: 32px;
     background: repeating-linear-gradient(90deg,#000,#000 6px,transparent 6px,transparent 12px);">
-
 
 
         <h3 style="margin-top: 32px;">October 10th 2024 (v 3.6.4)</h3>
@@ -545,7 +613,7 @@
               </h5>
               <p>TDP performs validation checks across related items in a record and will generate error messages capturing instances where <a href="viewing-error-reports.html#inconsistent-values">inconsistent values within the record</a> were detected. </p>
               <p>Previous versions of these types of error messages would return the following (for example): 
-              <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;"><b>If</b> Cash Amount <b>:873 validator1 passed</b> then Item 21B (Cash and Cash Equivalents: Number of Months) 0 <b>is not</b> larger than 0.</code>
+              <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;"><b>If</b> Cash Amount<b>: 873 validator1 passed</b> then Item 21B (Cash and Cash Equivalents: Number of Months) 0 <b>is not</b> larger than 0.</code>
             </p>
               <p>Now, this type of error message will read: 
                 <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;"><b>Since Item 12</b> (Cash Amount) <b>is 100</b>, then Item 21B (Cash and Cash Equivalents: Number of Months) 0 <b>must be</b> larger than 0.</code>
