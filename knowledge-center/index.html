@@ -338,19 +338,20 @@
         <h2>What's new in TDP</h2>
 
         <h3 style="margin-top: 32px;">December 18th 2024 (v 3.7.5)</h3>
+
         <h4 style="margin-top: 16px; color: #595959;">Changed / Fixed:</h4>
         <ul class="usa-icon-list">
           <li class="usa-icon-list__item" style="margin-top: 16px;">
             <div class="usa-icon-list__icon text-ink">
                 <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 5px; margin-left: 5px;"/>
-  
           </div>
+          
           <div class="usa-icon-list__content">
             <h5 class="usa-icon-list__title">
               Correcting Validation Error
             </h5>
             <p>Based on your feedback, we identified multiple error messages in the TDP that did not align with the coding instructions. To address this, we have revised the system checks to better conform to the guidelines.</p>
-            <p>TDP was incorrectly generating the following error messages for TANF and SSP Section 1: Active Case files:</p>
+            <p>TDP was incorrectly generating the following error messages for TANF and SSP Section 1: Active Case files:
             <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">T1 Item 27 (Waiver Evaluation): 0 is not in [9, ]
             </code>
             <p>
@@ -368,12 +369,14 @@
             <p>
             <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">Since <b>Item 26</b> (Family Affiliation) is 1, then <b>Item 38</b> (Citizenship/Immigration Status) 3 must be one of (1, 2)
             </code>
+            </p>
+            <p>
             <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">Since <b>Item 60</b> (Family Affiliation) is 1, then <b>Item 69</b> (Citizenship/Immigration Status) 3 must be one of (1, 2)
             </code>
             </p>
-
-            <p>This has been resolved, and no changes to these files are needed. The TDP team will re-process the files at a later date. You may also resubmit any files impacted by this bug to obtain revised TDP-generated feedback reports, but this is not required.</p>
-      </div>
+            <p>This has been resolved, and no changes to these files are needed. The TDP team will re-process the files at a later date. You may also resubmit any files impacted by this bug to obtain revised TDP-generated feedback reports, but this is not required.
+            </p>
+           </div>
         </li>
       </ul>
 
@@ -485,7 +488,6 @@
               </h5>
               <p>A new column called "Error Type" has been added to error reports. This feature will help users quickly locate high-priority errors affecting file submission.</p>
               <p>The new column categorizes four types of errors by their priority and impact on file status. Detailed guidance to filter high-priority errors along with further information on this update is available in the <a href="viewing-error-reports.html#interpreting-error-types">Knowledge Center.</a></p>
-
 
 
             </div>
