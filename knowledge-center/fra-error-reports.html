@@ -404,8 +404,15 @@ The error report has four columns:
 
           <li><strong>File errors</strong>
             
-            <p>If a file doesn't adhere to official instructions in layout and content it will likely result in this error. Frequent causes include the file beginning with a header row rather than immediately beginning with data and—if a file was uploaded in .xlsx format—exit dates stored as a date column rather than a numberic one. Guidance on how to format data can be found in the <a href="https://acf.gov/sites/default/files/documents/ofa/1A.Instructions-work-outcomes-of-TANF-exiters-report.pdf">Work Exiters report instructions</a>.</p>
+            <p>If a file doesn't adhere to official instructions in layout and content it will likely result in this error. Frequent causes include:
+              <ul><li>Files beginning with a blank row or header row instead of the first data row</li>
+              <li>Files with hidden and/or extra columns</li>
+              <li>Files uploaded in .xlsx format with exit dates stored in a date format column rather than a numeric column</li>
+            </ul> <div style="min-height: 22px;"></div>Guidance on how to format data can be found in the <a href="https://acf.gov/sites/default/files/documents/ofa/1A.Instructions-work-outcomes-of-TANF-exiters-report.pdf">Work Exiters report instructions</a>.</p>
             <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">File does not begin with FRA data.
+    </code>
+    <br><br> 
+            <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">We're sorry, an unexpected error has occurred and the file has been rejected. Please contact the TDP support team at TANFData@acf.hhs.gov for further assistance.
     </code>
            
           </li>
