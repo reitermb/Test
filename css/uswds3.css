@@ -3907,10 +3907,11 @@ dfn{
 
 @media all and (max-width: 63.99em){
   .usa-logo{
-    flex:1 1 0%;
+    /*flex:1 1 0%;*/
     font-size:0.93rem;
     line-height:0.9;
     margin-left:1rem;
+    width: 100%;
   }
 }
 @media all and (min-width: 64em){
