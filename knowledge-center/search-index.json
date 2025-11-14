@@ -51,13 +51,13 @@
     "title": "Understanding TANF Error Reports and File Structure",
     "url": "viewing-error-reports.html",
     "content": "How to access and interpret TANF error reports to correct errors in your data",
-    "tags": ["parsing","coding instructions","download","error type"]
+    "tags": ["parsing","coding instructions","download","error type","M1","T1","M","T","header","trailer","message","pre check"]
   },
       {
     "title": "Understanding FRA Error Reports and File Structure",
     "url": "fra-error-reports.html",
     "content": "How to access and interpret FRA error reports to correct errors in your data",
-    "tags": ["parsing","coding instructions","download","error type","SSN"]
+    "tags": ["parsing","coding instructions","download","error type","SSN","social security number","message","pre check"]
   },
       {
     "title": "Resubmitting Complete Data Files",
