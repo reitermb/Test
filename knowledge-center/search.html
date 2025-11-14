@@ -331,9 +331,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Event handler to send GA event
   function sendTypingEvent(value) {
     gtag('event', 'typing_pause', {
-      event_category: 'User Interaction',
-      event_label: 'Input Field',
-      value: value.length // or sanitize and send value if appropriate
+      event_category: 'Search Interaction',
+      event_label: 'Search Bar',
+      search_term: value // or sanitize and send value if appropriate
     });
     console.log('Typing event sent:', value);
   }
@@ -342,7 +342,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const inputField = document.getElementById('searchBox');
   const debouncedHandler = debounce(function(e) {
     sendTypingEvent(e.target.value);
-  }, 2000); // 2-second debounce
+  }, 1000); // 2-second debounce
 
   inputField.addEventListener('input', debouncedHandler);
 </script>
