@@ -9,13 +9,13 @@
     "title": "Create a New Login.gov Account",
     "url": "create-new-login.html",
     "content": "Step-by-step guide to creating a new Login.gov account",
-    "tags": ["account"]
+    "tags": ["account","sign up"]
   },
   {
     "title": "Use an Existing Login.gov Account",
     "url": "existing-login.html",
     "content": "Step-by-step guide to using an existing login.gov account with TDP",
-    "tags": ["account"]
+    "tags": ["account","sign up"]
   },
     {
     "title": "About Email Notifications",
