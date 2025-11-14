@@ -9,6 +9,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/uswds.min.js"></script>
+    <script src="components/desktop-navigation.js" defer></script>
+    <script src="components/mobile-navigation.js" defer></script>
+    <script src="components/shutdown-banner.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+    <script>
+  let fuse;
+
+  fetch('search-index.json')
+    .then(res => res.json())
+    .then(data => {
+      const options = {
+        includeScore: true,
+        threshold: 0.6,
+        distance: 0,
+        includeMatches: true,
+        keys: ['title', 'content', 'tags']
+      };
+      fuse = new Fuse(data, options);
+    });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchBox = document.getElementById('searchBox');
+    const resultsList = document.getElementById('results');
+
+
+    searchBox.addEventListener('input', function (e) {
+      const query = e.target.value;
+      const results = fuse.search(query);
+
+results.sort((a, b) => a.score - b.score);
+
+
+      resultsList.innerHTML = results.map(result => {
+        const { title, url, content, tags } = result.item;
+        const snippet = getSnippet(content, query);
+        return `<li><a href="${url}">${title}</a><br>${snippet}<span class="tags">${tags.map(tag => `<span style="border-color: black; border-width: 1px; border-style: solid; padding: 8px; border-radius: 100px; margin-bottom: 8px;">${tag}</span>`).join(' ')}</span></li>
+`;
+      }).join('');
+
+    });
+
+
+
+    function getSnippet(content, term, radius = 40) {
+      const index = content.toLowerCase().indexOf(term.toLowerCase());
+      if (index === -1) return content.slice(0, radius * 10) + '...';
+      const start = Math.max(0, index - radius);
+      const end = Math.min(content.length, index + term.length + radius);
+      return '...' + content.slice(start, end) + '...';
+    }
+
+
+  });
+</script>
+
+
 
   </head>
 
@@ -137,81 +194,12 @@
       <button class="usa-nav__close">
         <img src="../img/close.svg" role="img" alt="Close" />
       </button>
+
+      <a href="search.html" class="usa-button usa-button--outline" style="position: relative; margin-bottom: 16px;">🔍 Search</a>
+
       <a href="https://tanfdata.acf.hhs.gov/" class="usa-button usa-button--outline" style="position: relative; margin-bottom: 16px;">Go to TDP</a>
-
-      <ul class="usa-nav__primary usa-accordion">
-        <li class="usa-nav__primary-item">
-          <a href="./index.html"  class="usa-current" aria-current="page">
-            <span>Getting Started</span>
-          </a>
-        </li>
-        <li>
-        <ul class="usa-sidenav__sublist">
-        <li class="usa-sidenav__item">
-        <a href="./create-new-login.html">Create a New Login.gov Account</a>
-        </li>
-
-        <li class="usa-sidenav__item">
-        <a href="./existing-login.html">Use an Existing Login.gov Account</a>
-        </li>
-
-        <li class="usa-sidenav__item">
-        <a href="./about-email-notifications.html">About Email Notifications</a>
-        </li>
-        <li class="usa-sidenav__item">
-        <a href="./faq.html">Frequently Asked Questions</a>
-        </li>
-
-      </ul>
-</li>
-
-
-        <li class="usa-sidenav__item">
-        <a href="uploading-data.html">Submitting TANF Data</a>
-        </li>
-        <li>
-        <ul class="usa-sidenav__sublist">
-          <li class="usa-sidenav__item">
-          <a href="./view-submission-history.html">Viewing Submission History</a>
-          </li>
-
-          <li class="usa-sidenav__item">
-          <a href="./viewing-error-reports.html">Understanding TANF Error Reports and File Structure</a>
-          </li>
-
-          <li class="usa-sidenav__item">
-          <a href="./complete-resubmissions.html">Resubmitting Complete Data Files</a>
-          </li>
-
-          <li class="usa-sidenav__item">
-          <a href="./exporting-complete-data-using-ftanf.html">Exporting Complete Data Using FTANF</a>
-          </li>
-
-        </ul>
-      </li>
-      <li class="usa-sidenav__item">
-        <a href="./submitting-fra-data.html">Submitting FRA Data</a>
-        </li>
-
-        <li>
-          <ul class="usa-sidenav__sublist">
-            <li class="usa-sidenav__item">
-            <a href="./fra-error-reports.html">Understanding FRA Error Reports and File Structure</a>
-            </li>
-
-          </ul>
-        </li>
-
-        <li class="usa-sidenav__item">
-        <a href="./managing-your-account.html">Managing Your Account</a>
-        </li>
-      
-
-        <li class="usa-sidenav__item">
-        <a href="./give-feedback.html">Give Feedback</a>
-        </li>
-
-      </ul>
+<mobile-nav></mobile-nav>
+     
       <!-- Here ends mobile menu -->
 
 
@@ -221,80 +209,14 @@
 
 <!-- Here begins desktop web menu -->
 
-  <div class="usa-section">
+   <div class="usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap">
       <div class="usa-layout-docs__sidenav desktop:grid-col-3">
         <nav aria-label="Secondary navigation">
-          <ul class="usa-sidenav">
-            <li class="usa-sidenav__item">
-              <a href="./index.html" class="usa-current" aria-current="page">Getting Started</a>
-            </li>
-            <li>
-            <ul class="usa-sidenav__sublist">
-              <li class="usa-sidenav__item">
-                <a href="./create-new-login.html">Create a New Login.gov Account</a>
-              </li>
-
-              <li class="usa-sidenav__item">
-                <a href="./existing-login.html">Use an Existing Login.gov Account</a>
-              </li>
-
-              <li class="usa-sidenav__item">
-              <a href="./about-email-notifications.html">About Email Notifications</a>
-              </li>
-              <li class="usa-sidenav__item">
-              <a href="./faq.html">Frequently Asked Questions</a>
-              </li>
-
-            </ul>
-          </li>
-
-            <li class="usa-sidenav__item">
-              <a href="uploading-data.html">Submitting TANF Data</a>
-              </li>
-              <li>
-              <ul class="usa-sidenav__sublist">
-                <li class="usa-sidenav__item">
-                <a href="./view-submission-history.html">Viewing Submission History</a>
-                </li>
-
-                  <li class="usa-sidenav__item">
-                <a href="./viewing-error-reports.html">Understanding TANF Error Reports and File Structure</a>
-                </li>
-
-              <li class="usa-sidenav__item">
-                <a href="./complete-resubmissions.html">Resubmitting Complete Data Files</a>
-              </li>
-
-              <li class="usa-sidenav__item">
-              <a href="./exporting-complete-data-using-ftanf.html">Exporting Complete Data Using FTANF</a>
-              </li>
-
-              </ul>
-            </li>
-            
-            <li class="usa-sidenav__item">
-              <a href="./submitting-fra-data.html">Submitting FRA Data</a>
-            </li>
-
-            <li>
-              <ul class="usa-sidenav__sublist">
-                <li class="usa-sidenav__item">
-                <a href="./fra-error-reports.html">Understanding FRA Error Reports and File Structure</a>
-                </li>
-
-              </ul>
-            </li>
-
-            <li class="usa-sidenav__item">
-              <a href="./managing-your-account.html">Managing Your Account</a>
-            </li>
-
-             <li class="usa-sidenav__item">
-              <a href="./give-feedback.html">Give Feedback</a>
-            </li>
-          </ul>
+       
+              <site-nav></site-nav>
+          
         </nav>
       </div>
 
@@ -306,17 +228,13 @@
         class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs"
         id="main-content">
 
-           <div class="usa-alert usa-alert--warning">
-  <div class="usa-alert__body" style="padding-left: 16px;">
-    <!-- <h2 class="usa-alert__heading"><span aria-hidden="true">⚠️</span>Notifications Temporarily Unavailable</h2> -->
-    <p class="usa-alert__text">
-      ⚠️ Annual funding for much of the federal government expired at 11:59pm ET on Tuesday, September 30, 2025. As a result, certain federal government activities have ceased due to a lack of appropriated funding. This means: <br><br> (a) information on the TDP website may not be up to date,<br> (b) data submitted via the TDP website might not be processed until appropriations are enacted, and <br> (c) the agency may not be able to respond to inquiries until appropriations are enacted.
-    </p>
-    
-  </div>
-</div> 
-        <div style="min-height: 22px;"></div>
-        <div style="min-height: 22px;"></div>
+      <!-- Shutdown banner, uncomment the shut-down tag below to enable. See components/shutdown-banner.html for content -->
+
+                 <!-- <shut-down></shut-down> -->
+
+      <!-- Shutdown banner, uncomment the shut-down tag above to enable. See components/shutdown-banner.html for content -->
+
+
 
         <h1>Getting Started</h1>
         <div style="min-height: 22px;"></div>

@@ -1,14 +1,86 @@
 [
   {
     "title": "Knowledge Center Homepage",
-    "url": "/index.html",
-    "content": "Release Notes and Stuff.",
-    "tags": ["Optional Tags"]
+    "url": "index.html",
+    "content": "Homepage: Getting Started With TDP",
+    "tags": []
   },
   {
-    "title": "FTANF",
-    "url": "/ftanf.html",
-    "content": "Reach out to us via email or phone. We're happy to help!",
-    "tags": []
+    "title": "Create a New Login.gov Account",
+    "url": "create-new-login.html",
+    "content": "Step-by-step guide to creating a new Login.gov account",
+    "tags": ["account"]
+  },
+  {
+    "title": "Use an Existing Login.gov Account",
+    "url": "existing-login.html",
+    "content": "Step-by-step guide to using an existing login.gov account with TDP",
+    "tags": ["account"]
+  },
+    {
+    "title": "About Email Notifications",
+    "url": "about-email-notifications.html",
+    "content": "Step-by-step guide to creating a new login.gov account",
+    "tags": ["e-mail"]
+  },
+    {
+    "title": "Frequently Asked Questions",
+    "url": "faq.html",
+    "content": "Frequently asked questions about accessing TDP, Submitting data, and bug reporting",
+    "tags": ["faq","help"]
+  },
+      {
+    "title": "Submitting TANF Data",
+    "url": "uploading-data.html",
+    "content": "Step-by-step guide to submitting TANF data in TDP",
+    "tags": ["upload","TANF","data","files","data files","submission"]
+  },
+      {
+    "title": "Submitting FRA Data",
+    "url": "submitting-fra-data.html",
+    "content": "Step-by-step guide to submitting FRA data in TDP",
+    "tags": ["work outcomes","exiters","submission","data files"]
+  },
+      {
+    "title": "Viewing Submission History",
+    "url": "view-submission-history.html",
+    "content": "Access all your previously submitted TANF data files for a given reporting period",
+    "tags": ["TANF","data files","audit"]
+  },
+      {
+    "title": "Understanding TANF Error Reports and File Structure",
+    "url": "viewing-error-reports.html",
+    "content": "How to access and interpret TANF error reports to correct errors in your data",
+    "tags": ["parsing","coding instructions","download","error type"]
+  },
+      {
+    "title": "Understanding FRA Error Reports and File Structure",
+    "url": "fra-error-reports.html",
+    "content": "How to access and interpret FRA error reports to correct errors in your data",
+    "tags": ["parsing","coding instructions","download","error type"]
+  },
+      {
+    "title": "Resubmitting Complete Data Files",
+    "url": "complete-resubmissions.html",
+    "content": "Guidance on ensuring files you resubmit after corrections contain all cases for the reporting period, not just those modified since the original submission",
+    "tags": ["resubmssion","resubmit","data files","TANF"]
+  },
+      {
+    "title": "Exporting Complete Data Using FTANF",
+    "url": "exporting-complete-data-using-ftanf.html",
+    "content": "Walkthrough of how to export complete data files rather than partial ones from FTANF",
+    "tags": ["FTANF","export","exe","resubmission"]
+  },
+      {
+    "title": "Managing Your Account",
+    "url": "managing-your-account.html",
+    "content": "Managing your account in Login.gov and on TDP's Profile page",
+    "tags": ["login.gov","profile","delete","password"]
+  },
+      {
+    "title": "Give Feedback",
+    "url": "give-feedback.html",
+    "content": "Give feedback on TDP or the Knowledge Center",
+    "tags": ["help","bug"]
   }
 ]
