@@ -55,7 +55,7 @@ results.sort((a, b) => a.score - b.score);
 
 
 
-    function getSnippet(content, term, radius = 40) {
+    function getSnippet(content, term, radius = 400) {
       const index = content.toLowerCase().indexOf(term.toLowerCase());
       if (index === -1) return content.slice(0, radius * 100) + '';
       const start = Math.max(0, index - radius);
