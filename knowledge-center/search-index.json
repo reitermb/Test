@@ -82,5 +82,11 @@
     "url": "give-feedback.html",
     "content": "Give feedback on TDP or the Knowledge Center",
     "tags": ["help","bug"]
+  },
+        {
+    "title": "Release Notes",
+    "url": "release-notes.html",
+    "content": "Find out what's new in TDP and look up all past improvements",
+    "tags": []
   }
 ]
