@@ -27,7 +27,7 @@
     "title": "Frequently Asked Questions",
     "url": "faq.html",
     "content": "Frequently asked questions about accessing TDP, Submitting data, and bug reporting",
-    "tags": ["faq","help"]
+    "tags": ["faq","help","problem"]
   },
       {
     "title": "Submitting TANF Data",
@@ -39,7 +39,7 @@
     "title": "Submitting FRA Data",
     "url": "submitting-fra-data.html",
     "content": "Step-by-step guide to submitting FRA data in TDP",
-    "tags": ["work outcomes","exiters","submission","data files"]
+    "tags": ["work outcomes","exiters","submission","data files","SSN"]
   },
       {
     "title": "Viewing Submission History",
