@@ -306,5 +306,35 @@ results.sort((a, b) => a.score - b.score);
       </div>
     </div>
   </div>
+
+  <script>
+  // Debounce function
+  function debounce(func, delay) {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+  }
+
+  // Event handler to send GA event
+  function sendTypingEvent(value) {
+    gtag('event', 'typing_pause', {
+      event_category: 'User Interaction',
+      event_label: 'Input Field',
+      value: value.length // or sanitize and send value if appropriate
+    });
+    console.log('Typing event sent:', value);
+  }
+
+  // Attach listener with debounce
+  const inputField = document.getElementById('searchBox');
+  const debouncedHandler = debounce(function(e) {
+    sendTypingEvent(e.target.value);
+  }, 2000); // 2-second debounce
+
+  inputField.addEventListener('input', debouncedHandler);
+</script>
+
 </footer>
 </div>

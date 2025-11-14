@@ -57,7 +57,7 @@
     "title": "Understanding FRA Error Reports and File Structure",
     "url": "fra-error-reports.html",
     "content": "How to access and interpret FRA error reports to correct errors in your data",
-    "tags": ["parsing","coding instructions","download","error type"]
+    "tags": ["parsing","coding instructions","download","error type","SSN"]
   },
       {
     "title": "Resubmitting Complete Data Files",
@@ -87,6 +87,6 @@
     "title": "Release Notes",
     "url": "release-notes.html",
     "content": "Find out what's new in TDP and look up all past improvements",
-    "tags": []
+    "tags": ["what's new","bug fix"]
   }
 ]
