@@ -30,6 +30,12 @@
     "tags": ["faq","help","problem"]
   },
       {
+    "title": "FAQ: Are there restrictions governing where TDP can be used?",
+    "url": "faq.html#Are there restrictions governing where TDP can be used?",
+    "content": "The TANF Data Portal can be used from any computer in the US or US Territories. There is no need to get any particular computer or IP Address “pre-approved” in order to use TDP.",
+    "tags": []
+  },
+      {
     "title": "Submitting TANF Data",
     "url": "uploading-data.html",
     "content": "Step-by-step guide to submitting TANF data in TDP",
