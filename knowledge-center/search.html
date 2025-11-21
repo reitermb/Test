@@ -49,12 +49,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       const results = fuse.search(query);
 
 results.sort((a, b) => a.score - b.score);
+resultsCount.textContent = results.length
+  ? `${results.length} result${results.length !== 1 ? 's' : ''} found`
+  : 'No results found';
 
 
-      resultsList.innerHTML = results.map(result => {
-        const { title, url, content, tags } = result.item;
+
+      resultsList.innerHTML = results.map((result, index) => {
+        const { title, url, content, ariaDescription, tags } = result.item;
+        const resultsCount = document.getElementById('resultsCount');
+resultsCount.textContent = `${results.length} result${results.length !== 1 ? 's' : ''} found`;
         const snippet = getSnippet(content, query);
-        return `<li><a href="${url}">${title}</a><br>${snippet}</li>
+        const snippetId = `desc-${index}`;
+        return `<li><a href="${url}"aria-describedby="${snippetId}">${title}</a><br><div id="${snippetId}"  ${ariaDescription ? ` aria-describedby="${ariaDescription}"` : ''} >${snippet}${ariaDescription ? '<span aria-label="Ellipses, read more at the link">…</span>' : ''}</div></li>
 `;
       }).join('');
 
@@ -262,6 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <div>
+  <p id="resultsCount" aria-live="polite"></p>
 <ul id="results"></ul>
 </div>
 
