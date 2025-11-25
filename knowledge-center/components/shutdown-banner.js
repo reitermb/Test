@@ -14,3 +14,5 @@ class ShutDownBanner extends HTMLElement {
 }
 
 customElements.define('shut-down', ShutDownBanner);
+
+

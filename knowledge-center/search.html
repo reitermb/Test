@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .then(data => {
       const options = {
         includeScore: true,
-        findAllMatches: false,
+        findAllMatches: true,
         minMatchCharLength: 2,
         threshold: .2,
         distance: 100,
@@ -94,6 +94,9 @@ resultsCount.textContent = `${results.length} result${results.length !== 1 ? 's'
 
   gtag('config', 'G-8V03JLZHK0');
 </script>
+
+
+
 
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -257,7 +260,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
         <h1>Search the Knowledge Center</h1>
+        <p>Search for anything or pick from common searches:</p>
+
+              <button class="search-pill" id="rnBtn">What's new?</button>
+              <button class="search-pill" id="faqBtn">FAQs</button>
+              <button class="search-pill" id="ssnBtn">SSNs</button>
+              <button class="search-pill" id="tanfBtn">TANF / SSP</button>
+              <button class="search-pill" id="fraBtn">FRA</button>
+              <button class="search-pill" id="manageBtn">Manage my account</button>
+
+
         <div style="min-height: 22px;"></div>
+
+        <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const searchBox = document.getElementById('searchBox');
+  const suggestBtn = document.getElementById('faqBtn');
+
+  suggestBtn.addEventListener('click', () => {
+    searchBox.value = 'faqs';
+    searchBox.dispatchEvent(new Event('input', { bubbles: true }));
+    // runSearch(searchBox.value); // optional
+  });
+});
+</script>
+        <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const searchBox = document.getElementById('searchBox');
+  const suggestBtn = document.getElementById('rnBtn');
+
+  suggestBtn.addEventListener('click', () => {
+    searchBox.value = "What's new";
+    searchBox.dispatchEvent(new Event('input', { bubbles: true }));
+    // runSearch(searchBox.value); // optional
+  });
+});
+</script>
+        <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const searchBox = document.getElementById('searchBox');
+  const suggestBtn = document.getElementById('ssnBtn');
+
+  suggestBtn.addEventListener('click', () => {
+    searchBox.value = "ssns";
+    searchBox.dispatchEvent(new Event('input', { bubbles: true }));
+    // runSearch(searchBox.value); // optional
+  });
+});
+</script>
+        <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const searchBox = document.getElementById('searchBox');
+  const suggestBtn = document.getElementById('tanfBtn');
+
+  suggestBtn.addEventListener('click', () => {
+    searchBox.value = "tanf";
+    searchBox.dispatchEvent(new Event('input', { bubbles: true }));
+    // runSearch(searchBox.value); // optional
+  });
+});
+</script>
+        <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const searchBox = document.getElementById('searchBox');
+  const suggestBtn = document.getElementById('fraBtn');
+
+  suggestBtn.addEventListener('click', () => {
+    searchBox.value = "fra";
+    searchBox.dispatchEvent(new Event('input', { bubbles: true }));
+    // runSearch(searchBox.value); // optional
+  });
+});
+</script>
+        <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const searchBox = document.getElementById('searchBox');
+  const suggestBtn = document.getElementById('manageBtn');
+
+  suggestBtn.addEventListener('click', () => {
+    searchBox.value = "account";
+    searchBox.dispatchEvent(new Event('input', { bubbles: true }));
+    // runSearch(searchBox.value); // optional
+  });
+});
+</script>
 
     <input
       class="usa-input"
