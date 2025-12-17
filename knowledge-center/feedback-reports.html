@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/uswds.min.js"></script>
+    <link href="dist/lity.css" rel="stylesheet">
+    <script src="dist/lity.js"></script>
     <script src="components/desktop-navigation.js" defer></script>
     <script src="components/mobile-navigation.js" defer></script>
     <script src="components/shutdown-banner.js" defer></script>
@@ -189,34 +191,30 @@
 
  <p>Jump to:</p>
  <ul>
-  <li><a href="#viewing">Download and View Feedback Reports</a></li>
+  <li><a href="#viewing">Finding Feedback Reports</a></li>
     <li><a href="#structure">Understanding Feedback Reports</a></li>
  </ul>
 
- <div style="min-height: 22px;"></div> 
- <hr style="border: none;
-    height: 1px;
-    background: #000;
-    margin-top: 32px;
-    background: repeating-linear-gradient(90deg,#000,#000 6px,transparent 6px,transparent 12px);">
-    <div style="min-height: 22px;"></div> <div style="min-height: 22px;"></div> 
+         <hr class="releaseHr" style="margin-bottom: 30px;">
 
-      <h2 id="viewing">Download and View Feedback Reports</h2>
-      <p>Error reports can be accessed from the FRA Data Files page by navigating to the Submission History section for a given reporting period. Read more about accessing Submission History.<br><br></p>
-      <p>To access error reports for submitted files, select the link in the ‘Error Report’ column to download error feedback associated with the relevant version of the file.</p>
 
-       <div style="min-height: 22px;"></div> 
-        <a href="../img/fra/submission-history.png" data-lity data-lity-desc="FRA Submission history with emphasis on the ability to download a previously submitted file and an error report">
-              <img src="../img/fra/submission-history.png" alt="FRA Submission history with emphasis on the ability to download a previously submitted file and an error report">
+      <h2 id="viewing">Finding Feedback Reports</h2>
+
+       <ol class="usa-process-list">
+          <li class="usa-process-list__item">
+            <h2 class="usa-process-list__heading">Sign into the TANF Data Portal</h2>
+            <p class="margin-top-05">
+              Begin here: <a href="https://tanfdata.acf.hhs.gov/">Visit the TANF Data Portal</a> and select 'Sign in with login.gov for grantees'
+              <div style="min-height: 22px;"></div>
+              <a href="../img/getting-started/existing-login-homepage.jpg" data-lity data-lity-desc="TANF Data Portal Sign In Page">
+              <img src="../img/getting-started/existing-login-homepage.jpg" alt="TANF Data Portal Sign In Page">
                 </a>
+            </p>
+          </li>
 
+     
+              <hr class="releaseHr">
 
- <hr style="border: none;
-    height: 1px;
-    background: #000;
-    margin-top: 32px;
-    background: repeating-linear-gradient(90deg,#000,#000 6px,transparent 6px,transparent 12px);">
-    <div style="min-height: 22px;"></div> <div style="min-height: 22px;"></div> 
 
       <h2 id="structure">Data File Structure</h2>
       <p>The FRA Work Outcomes of TANF Exiters report should be in either .csv or .xlsx format and made up of two columns of data: exit date (in YYYYMM format) and social security number (including no spaces, dashes, or other non-numeric characters). The submission file should only include the data above; not file headers, footers, column labels, or other information. For further guidance, please refer to the ACF resources below: </p>
