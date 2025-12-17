@@ -192,7 +192,7 @@
  <p>Jump to:</p>
  <ul>
   <li><a href="#viewing">Finding Feedback Reports</a></li>
-    <li><a href="#structure">Understanding Feedback Reports</a></li>
+    <li><a href="#understanding">Understanding Feedback Reports</a></li>
  </ul>
 
          <hr class="releaseHr" style="margin-bottom: 30px;">
@@ -202,91 +202,104 @@
 
        <ol class="usa-process-list">
           <li class="usa-process-list__item">
-            <h2 class="usa-process-list__heading">Sign into the TANF Data Portal</h2>
+            <h2 class="usa-process-list__heading">Search for the reporting period to view</h2>
             <p class="margin-top-05">
-              Begin here: <a href="https://tanfdata.acf.hhs.gov/">Visit the TANF Data Portal</a> and select 'Sign in with login.gov for grantees'
+              On the Feedback Reports page, complete the search fields for 'Fiscal Year (October – September)' to identify which data you’ll be viewing. The TANF/SSP Data Reporting Reference table is provided to help you map the calendar period content within the file to the reporting fiscal period and its respective reporting deadline.
               <div style="min-height: 22px;"></div>
-              <a href="../img/getting-started/existing-login-homepage.jpg" data-lity data-lity-desc="TANF Data Portal Sign In Page">
-              <img src="../img/getting-started/existing-login-homepage.jpg" alt="TANF Data Portal Sign In Page">
+                <a href="../img/feedback-reports/feedback-reports-tab.png" data-lity data-lity-desc="Feedback reports tab shown in the TDP nav bar">
+              <img src="../img/feedback-reports/feedback-reports-tab.png" alt="Feedback reports tab shown in the TDP nav bar">
+                </a>
+        
+            </p>
+          </li>
+         <li class="usa-process-list__item">
+            <h2 class="usa-process-list__heading">Download and view report files</h2>
+            <p class="margin-top-05">
+              To access the report files, Click on the zip file link in the 'Files' column to view the feedback files associated within that reporting fiscal quarter. Each file is titled in accordance with your FIPS code.
+              <div style="min-height: 22px;"></div>
+              <a href="../img/feedback-reports/download.png" data-lity data-lity-desc="Table showing feedback reports generated for the selected fiscal year with the final column with the report download link emphasized">
+              <img src="../img/feedback-reports/download.png" alt="Table showing feedback reports generated for the selected fiscal year with the final column with the report download link emphasized">
                 </a>
             </p>
           </li>
+     </ol>
 
-     
-              <hr class="releaseHr">
-
-
-      <h2 id="structure">Data File Structure</h2>
-      <p>The FRA Work Outcomes of TANF Exiters report should be in either .csv or .xlsx format and made up of two columns of data: exit date (in YYYYMM format) and social security number (including no spaces, dashes, or other non-numeric characters). The submission file should only include the data above; not file headers, footers, column labels, or other information. For further guidance, please refer to the ACF resources below: </p>
-      <ul>
-        <li><a href="https://acf.gov/sites/default/files/documents/ofa/1A.Instructions-work-outcomes-of-TANF-exiters-report.pdf">Work Outcomes of TANF Exiters Report Instructions</a></li>
-        <li><a href="https://acf.gov/sites/default/files/documents/ofa/1B.TANF-work-outcomes-of-TANF-exiters-report-example-file-submission.zip">Example File Submission</a></li>
-        <li><a href="https://acf.gov/sites/default/files/documents/ofa/1B.TANF-work-outcomes-of-TANF-exiters-report-example-file-submission.zip">Technical Resource Guide</a></li>
-      </ul>
-
- <div style="min-height: 22px;"></div> 
- <hr style="border: none;
-    height: 1px;
-    background: #000;
-    margin-top: 32px;
-    background: repeating-linear-gradient(90deg,#000,#000 6px,transparent 6px,transparent 12px);">
-    <div style="min-height: 22px;"></div> <div style="min-height: 22px;"></div> 
-
-      <h2 id="errors">Overview of the Error Report</h2>
-      <p>TDP's error reports are designed to provide you with key information you may need to quickly identify records that have been flagged for data quality issues.
-        <br><br>
-The error report has four columns:
-      </p>
-
-           <ul>
-        <li>Exit Date — Formatted in YYYYMM.</li>
-                <li>SSN — The last 4 digits are displayed if the number is potentially valid. </li>
-           <li>Row Number — Identifies which row of the file you submitted contains the record associated with a given error.</li>
-              <li>Error Description — Describes the error and key details to assist in correcting it. </li>
-      </ul>
-
-       <div style="min-height: 22px;"></div> 
-        <a href="../img/fra/error-report.png" data-lity data-lity-desc="Screenshot of an example error report containing both examples of common errors in the section below">
-              <img src="../img/fra/error-report.png" alt="Screenshot of an example error report containing both examples of common errors in the section below">
+     <p>TDP will also alert and link you to feedback reports from the submission history section of a reporting period you're viewing in the Data Files tab.</p>
+      <a href="../img/feedback-reports/feedback-available.png" data-lity data-lity-desc="Informational banner above TANF Submission History reading: Feedback Reports Available as of 12/1/2021. Please review the feedback (link) and if needed, resubmit complete and accurate data">
+              <img src="../img/feedback-reports/feedback-available.png" alt="Informational banner above TANF Submission History reading: Feedback Reports Available as of 12/1/2021. Please review the feedback (link) and if needed, resubmit complete and accurate data">
                 </a>
- <div style="min-height: 22px;"></div> 
-      <h3>Examples of Common Errors</h3>
-      <p>Below are examples of error messages associated with common issues that may be listed in an error report. <br><br> Some error messages that you may encounter in error reports are still in development and may have been listed incorrectly or need further clarity. Please feel free to reach out to <a href="mailto:tanfdata@acf.hhs.gov">tanfdata@acf.hhs.gov</a> with questions or requests for additional guidance. We continuously update the system based on user feedback and encourage you to reach out if you encounter any confusing errors or believe the system incorrectly identified an issue.
+              <hr class="releaseHr" style="margin-bottom: 30px;">
 
-        <ol>
 
-          <li><strong>File errors</strong>
-            
-            <p>If a file doesn't adhere to official instructions in layout and content it will likely result in this error. Frequent causes include:
-              <ul><li>Files beginning with a blank row or header row instead of the first data row</li>
-              <li>Files with hidden and/or extra columns</li>
-              <li>Files uploaded in .xlsx format with exit dates stored in a date format column rather than a numeric column</li>
-            </ul> <div style="min-height: 22px;"></div>Guidance on how to format data can be found in the <a href="https://acf.gov/sites/default/files/documents/ofa/1A.Instructions-work-outcomes-of-TANF-exiters-report.pdf">Work Exiters report instructions</a>.</p>
-            <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">File does not begin with FRA data.
-    </code>
-    <br><br> 
-            <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">We're sorry, an unexpected error has occurred and the file has been rejected. Please contact the TDP support team at TANFData@acf.hhs.gov for further assistance.
-    </code>
-           
-          </li>
-          <li> <div style="min-height: 22px;"></div> <strong>Exit Date Errors</strong>
-            
-            <p>If an exit date in your report falls outside of the fiscal period you selected in TDP, it will result in an error. Similarly, if an exit date contains too few, too many, or unexpected characters it too will generate an error.</p>
-            <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">Exit date (202413) is not valid. Date must be in the range of 2025 - Q1 (Oct-Dec).
-    </code>
-           
-          </li>
-          
-            <li><div style="min-height: 22px;"></div> <strong>Social Security Number Errors</strong>
-            
-            <p>If a social security number contains too few, too many, or non-numeric characters it will result in an error. Additionally, each potentially valid social security number should only be associated with one exit date within a single month. Multiple instances of 999999999 within a single month will not be flagged as duplicate SSN errors.</p>
-                    <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">Social Security Number (SSN) is not valid. Check that the SSN is 9 digits, does not contain only zeroes in any one section, and does not contain dashes or other punctuation. Enter 999999999 if an individual does not have an SSN. 
-    </code><br><br> 
-            <code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8; display: inline-block;">Duplicate Social Security Number within a month. Check that individual SSNs within a single exit month are not included more than once.
-    </code>
+      <h2 id="understanding">Understanding Feedback Reports</h2>
 
-          </li>
+       <p style="margin-top: .50rem">Each ZIP file contains multiple feedback reports for the preliminary work participation rate and time limit calculations. Please refer to the most recently produced report for the most up-to-date feedback about your data. For examples of each type of feedback report and explanations of error flags please refer to the downloadable workbook below. <br><br>If you have any questions or require assistance, please contact <a href="mailto:Yun.Song@acf.hhs.gov?cc=TANFdata@acf.hhs.gov">Yun.Song@acf.hhs.gov</a> and copy TANFData@acf.hhs.gov.</p>
+
+         <a style="margin-top: .5rem" href="Reference TANF & SSP WPR & TL Feedback Reports.xlsx" class="usa-button">Download Workbook</a>
+
+      <h3 style="margin-top: 16px; margin-bottom: 16px;">Report types included in the workbook</h3>
+      <div style="display: flex; flex-direction: row; gap: 8px;">
+        <div style="display: flex-item; background-color: #c5d9f1; border-radius: 5px; border-color: #333; border-style: solid; padding: 16px; width: 50%;">
+          <h4 style="margin-top: 8px">TANF WPR Reports</h4>
+          <ol>
+            <li>TANF Monthly Cases Summary</li>
+            <li>Error Flags</li>
+            <li>TANF Cases Review
+            <ul>
+              <li>3.0 Zero Payment</li>
+              <li>3.1 Excuse Absense hours >4 hours</li>
+              <li>3.2 Holiday hours >4 or 6 hours</li>
+              <li>3.3 Work hours >80 hours</li>
+              <li>3.4 Disregarded but met work requirement cases</li>
+          </ul></li>
+          <li>Numerator / Denominator and rate</li>
         </ol>
+        </div>
+              <div style="display: flex-item; background-color: #ebf1de; border-radius: 5px; border-color: #333; border-style: solid; padding: 16px; width: 50%;">
+          <h4 style="margin-top: 8px">SSP WPR Reports</h4>
+          <ol>
+            <li>SSP Monthly Cases Summary</li>
+            <li>Error Flags</li>
+            <li>SSP Cases Review
+            <ul>
+              <li>3.0 Zero Payment</li>
+              <li>3.1 Excuse Absense hours >4 hours</li>
+              <li>3.2 Holiday hours >4 or 6 hours</li>
+              <li>3.3 Work hours >80 hours</li>
+              <li>3.4 Disregarded but met work requirement cases</li>
+          </ul></li>
+          <li>Numerator / Denominator and rate</li>
+        </ol>
+        </div>
+     </div>
+           <div style="display: flex; flex-direction: row; gap: 8px; margin-top: 8px;">
+        <div style="display: flex-item; background-color: #e4dfec; border-radius: 5px; border-color: #333; border-style: solid; padding: 16px; width: 50%;">
+          <h4 style="margin-top: 8px">TANF & SSP Combined</h4>
+          <ol>
+            <li>TANF & SSP numerator / denominator and rate</li>
+            <li>TANF & SSP combined WPRs</li>
+        </ol>
+        </div>
+              <div style="display: flex-item; background-color: #fde9d9; border-radius: 5px; border-color: #333; border-style: solid; padding: 16px; width: 50%;">
+          <h4 style="margin-top: 8px">Time Limit Reports</h4>
+          <ol>
+            <li>Countable Months</li>
+            <li>Exemption Distribution</li>
+            <li>TimeLimit Errorflags</li>
+          <li>Number of cases with over 60 months</li>
+        </ol>
+        </div>
+     </div>
+
+
+
+
+      
+     
+
+ 
+
+ 
 
       </main>
     </div>
