@@ -39,6 +39,16 @@ function showDiv(id) {
   document.getElementById(id).style.display = "block";
 }
 </script>
+<script>
+function showDiv2(id) {
+  // 1. Explicitly hide both potential IDs
+  document.getElementById('containserrors').style.display = "none";
+  document.getElementById('noerrors').style.display = "none";
+
+  // 2. Show the one that was passed to the function
+  document.getElementById(id).style.display = "block";
+}
+</script>
 
 
 
@@ -223,7 +233,7 @@ function showDiv(id) {
                         <div style="min-height: 22px;"></div>
         <a href="#getting-started">User Account Emails</a><br>
         <a href="#tanf-ssp">TANF/SSP Emails</a><br>
-        <a href="#fra">FRA Emails</a><br>
+        <!-- <a href="#fra">FRA Emails</a><br> -->
         <a href="#feedback">Feedback Report Emails</a><br>
 
 
@@ -269,6 +279,19 @@ function showDiv(id) {
         Access Request Approved
       </label>
     </div>
+      <div class="usa-radio">
+      <input
+        class="usa-radio__input usa-radio__input--tile"
+        id="radio-inactive"
+        type="radio"
+        name="email-preview-group"
+        value="inactive"
+        onclick="showDiv('inactive')"
+      />
+      <label class="usa-radio__label" for="radio-inactive">
+        Account Inactive
+      </label>
+    </div>
      <div class="usa-radio">
       <input
         class="usa-radio__input usa-radio__input--tile"
@@ -282,6 +305,7 @@ function showDiv(id) {
         Account Deactivated
       </label>
     </div>
+    
   </fieldset>
 </form>
                 <div style="min-height: 22px;"></div>
@@ -367,6 +391,46 @@ function showDiv(id) {
     </div>
   </div>
 
+  
+<div id="inactive" class="email-window" style="display: none;">
+  <div class="email-header">
+    <div class="window-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <div class="email-meta">
+    <div><span class="label">From:</span>no-reply@tanfdata.acf.hhs.gov</div>
+    <div><span class="label">Subject:</span>Inactive Account</div>
+  </div>
+
+
+  <div class="email-body">
+                      <img src="https://i.imgur.com/ydabPh2.png" alt="TANF Data Portal" height="auto" width="200">
+
+    <h3 style="font-size: 2rem">Inactive Account</h3>
+    <div class="email-content">
+    <p>Hello, <br><br>
+         We noticed that you have not logged into the TANF Data Portal (TDP) for almost 180 days. <br> Since your account has been inactive, it's scheduled to be deactivated in <strong>10 days</strong> on <strong>April 21, 2026</strong> at <strong>5PM EST</strong>. However, if you are interested in keeping your account, it's easy!
+    </p>
+    
+   <div class="usa-button">
+      Sign in to keep your account active
+    </div>
+
+   <p><strong>Need help?</strong> <br> We're here for you! Check out the <span class="fake-link">Getting Started</span> guide or reach out to the TDP Admin team at <span class="fake-link">TANFData@acf.hhs.gov</span>.</p> 
+
+
+
+     <p>Thank you, <br><br> TDP Team</p>
+
+</div>
+    
+    </div>
+  </div>
+
   <div id="deactivated" class="email-window" style="display: none;">
   <div class="email-header">
     <div class="window-dots">
@@ -411,6 +475,46 @@ function showDiv(id) {
         <div style="min-height: 22px;"></div>
         <h2 id="tanf-ssp">TANF/SSP Emails</h2>
         <div style="min-height: 22px;"></div>
+
+        <form class="usa-form">
+  <fieldset class="usa-fieldset">
+    <legend class="usa-legend">Select an email to preview:</legend>
+    
+    <div class="usa-radio">
+      <input
+        class="usa-radio__input usa-radio__input--tile"
+        id="radio-containserrors"
+        type="radio"
+        name="email-preview-group"
+        value="asubmitted"
+        onclick="showDiv2('containserrors')"
+        checked="checked"
+      />
+      <label class="usa-radio__label" for="radio-containserrors">
+        Data Processed With Errors
+      </label>
+    </div>
+
+    <div class="usa-radio">
+      <input
+        class="usa-radio__input usa-radio__input--tile"
+        id="radio-noerrors"
+        type="radio"
+        name="email-preview-group"
+        value="noerrors"
+        onclick="showDiv2('noerrors')"
+      />
+      <label class="usa-radio__label" for="radio-noerrors">
+        Data Processed Without Errors
+      </label>
+    </div>
+
+    
+  </fieldset>
+</form>
+
+        <div style="min-height: 22px;"></div>
+
 
 <div id="containserrors" class="email-window">
   <div class="email-header">
@@ -479,9 +583,77 @@ function showDiv(id) {
     </div>
   </div>
 
+  
+<div id="noerrors" class="email-window" style="display: none;">
+  <div class="email-header">
+    <div class="window-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <div class="email-meta">
+    <div><span class="label">From:</span>no-reply@tanfdata.acf.hhs.gov</div>
+    <div><span class="label">Subject:</span>TANF Data Processed Without Errors</div>
+  </div>
+
+
+  <div class="email-body">
+                      <img src="https://i.imgur.com/ydabPh2.png" alt="TANF Data Portal" height="auto" width="200">
+
+    <h3 style="font-size: 2rem">TANF Data Processed Without Errors</h3>
+    <div class="email-content">
+    <p>Hello, <br><br>
+         Your <strong>TANF</strong> data file submitted for <strong>Indiana</strong> on <strong>March 19, 2026, 10:02 p.m.</strong> in <strong>Fiscal Year 2025 - Q1 (Oct - Dec)</strong> was <strong>Processed Without Errors</strong> for the following sections: 
+    </p>
+    
+  
+           <p>Submitted files:</p>
+           <div style="overflow-x: scroll !important">
+<table class="usa-table"> 
+<thead>
+  <tr>
+    <th>Section</th>
+    <th>Submitted By</th>
+    <th>Status</th>
+    <th>Cases Without Errors</th>
+    <th>Cases With Errors</th>
+    <th>Records Unable to Process</th>
+    <th>Error Report</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Active Case Data</td>
+    <td>Jett Reno</td>
+    <td>Accepted</td>
+    <td>742</td>
+    <td>0</td>
+    <td>0</td>
+    <td>No Errors</td>
+  </tr>
+
+</tbody>
+</table>
+</div>
+
+   <p>You can view your submission via the Submission History tab of the Data Files page if you need to review it. <span class="fake-link">Read more about using Submission History</span></p> 
+
+   <div class="usa-button">
+      Sign in to TDP
+    </div>
+
+     <p>Please contact TDP Admin team at <span class="fake-link">TANFData@acf.hhs.gov</span> if you need further assistance. <br><br> Thank you, <br><br> TDP Team</p>
+
+</div>
+    
+    </div>
+  </div>
+
    <div style="min-height: 22px;"></div>
 
-                        <hr class="releaseHr">
+                        <!-- <hr class="releaseHr">
 
 
                 <div style="min-height: 22px;"></div>
@@ -490,7 +662,7 @@ function showDiv(id) {
 
 
 
-           <div style="min-height: 22px;"></div>
+           <div style="min-height: 22px;"></div> -->
 
                         <hr class="releaseHr">
 
