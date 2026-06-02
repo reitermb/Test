@@ -29,6 +29,16 @@ html {
 }
 </style>
 <script>
+  window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // If the URL has ?tab2=resolved, this triggers showDiv2('resolved')
+    if (urlParams.has('tab2')) {
+        showDiv2(urlParams.get('tab2'));
+    }
+};
+</script>
+<script>
 function showDiv(id) {
   // 1. Explicitly hide both potential IDs
   document.getElementById('asubmitted').style.display = "none";
@@ -49,7 +59,19 @@ function showDiv2(id) {
 
   // 2. Show the one that was passed to the function
   document.getElementById(id).style.display = "block";
+
+// 3. Programmatically check the radio button
+  var radioId = 'radio-' + id; // Matches your HTML: "radio-resolved"
+  var radioButton = document.getElementById(radioId);
+  
+  if (radioButton) {
+      radioButton.checked = true;
+      console.log("Success: Radio button " + radioId + " checked.");
+  } else {
+      console.error("Error: Could not find radio button with ID: " + radioId);
+  }
 }
+
 </script>
 <script>
 function showDiv3(id) {
@@ -62,6 +84,7 @@ function showDiv3(id) {
   document.getElementById(id).style.display = "block";
 }
 </script>
+
 
 
 
