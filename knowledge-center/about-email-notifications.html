@@ -558,6 +558,19 @@ function showDiv3(id) {
         Data Reprocessed & Errors Resolved
       </label>
     </div>
+            <div class="usa-radio">
+      <input
+        class="usa-radio__input usa-radio__input--tile"
+        id="radio-reprocessedwitherrors"
+        type="radio"
+        name="email-preview-group"
+        value="reprocessedwitherrors"
+        onclick="showDiv2('reprocessedwitherrors')"
+      />
+      <label class="usa-radio__label" for="radio-reprocessedwitherrors">
+        Data Reprocessed & Contains Errors
+      </label>
+    </div>
 
 
     
@@ -757,6 +770,77 @@ function showDiv3(id) {
 </div>
 
    <p>You can view your submission via the Submission History tab of the Data Files page if you need to review it. <span class="fake-link">Read more about using Submission History</span></p> 
+
+   <div class="usa-button">
+      Sign in to TDP
+    </div>
+
+     <p>Please contact TDP Admin team at <span class="fake-link">TANFData@acf.hhs.gov</span> if you need further assistance. <br><br> Thank you, <br><br> TDP Team</p>
+
+</div>
+    
+    </div>
+  </div>
+
+
+  <div id="reprocessedwitherrors" class="email-window" style="display: none;">
+  <div class="email-header">
+    <div class="window-dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <div class="email-meta">
+    <div><span class="label">From:</span>no-reply@tanfdata.acf.hhs.gov</div>
+    <div><span class="label">Subject:</span>Action Required: TANF Data Reprocessed & Contains Errors</div>
+  </div>
+
+
+  <div class="email-body">
+                      <img src="https://i.imgur.com/ydabPh2.png" alt="TANF Data Portal" height="auto" width="200">
+
+    <h3 style="font-size: 2rem">Action Required: TANF Data Reprocessed & Contains Errors</h3>
+    <div class="email-content">
+    <p>Hello, <br><br>
+         Your <strong>TANF</strong> data file(s) submitted for <strong>Indiana</strong> on <strong>March 19, 2026, 10:02 p.m.</strong> in <strong>Fiscal Year 2025 - Q1 (Oct - Dec)</strong> were reprocessed and <strong>Accepted With Errors</strong>. Review the error report for more details, and <strong>resubmit your data file</strong> once the errors have been corrected. 
+    </p>
+    
+    </p>
+    
+  
+      
+           <p>Submitted files:</p>
+           <div style="overflow-x: scroll !important">
+<table class="usa-table"> 
+<thead>
+  <tr>
+    <th>Section</th>
+    <th>Submitted By</th>
+    <th>Status</th>
+    <th>Cases Without Errors</th>
+    <th>Cases With Errors</th>
+    <th>Records Unable to Process</th>
+    <th>Error Report</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Active Case Data</td>
+    <td>Rhonda Laur</td>
+    <td>Accepted with Errors</td>
+    <td>45</td>
+    <td>158</td>
+    <td>0</td>
+    <td>Error Report Available</td>
+  </tr>
+
+</tbody>
+</table>
+</div>
+
+   <p> The data file and the error report(s) can now be accessed via the Submission History tab of the Data Files page. <span class="fake-link">Read more about using Submission History</span></p> 
 
    <div class="usa-button">
       Sign in to TDP
