@@ -2,7 +2,7 @@
 
 The project updates website was created for use as a tool to communicate project updates and research findings to the broader OFA team and to grantees. It is also aimed at improving the accessibility of these updates from that of the prior PDF format. The structure of the site is aimed at being simple to extend and maintain via simple HTML/CSS skills so as to allow the current design team or other non-developer team members to easily update it without requiring additional development time to be spent on non-feature work. 
 
-This directory also houses the TDP Knowledge center which deploys to [https://tdp-project-updates.app.cloud.gov/knowledge-center](https://tdp-project-updates.app.cloud.gov/knowledge-center). This contains a simplified changelog, FAQ's, and how-to resources for TDP  onboarding and utilization. 
+This directory also houses the TDP Knowledge center which deploys to [https://tdp-project-updates/knowledge-center.tanfdata.acf.hhs.gov/](https://tdp-project-updates/knowledge-center.tanfdata.acf.hhs.gov/). This contains a simplified changelog, FAQ's, and how-to resources for TDP  onboarding and utilization. 
 
 ## How is this hosted?
 
@@ -12,7 +12,7 @@ It is a static website using the static file buildpack provided by cloud foundry
 
 ### Automated
 
-When ever any PR is approved and merged into raft-tdp-main, any changes that were made to this static site will be automatically deployed to the [https://tdp-project-updates.app.cloud.gov/](https://tdp-project-updates.app.cloud.gov/) domain.
+When ever any PR is approved and merged into raft-tdp-main, any changes that were made to this static site will be automatically deployed to the [https://tdp-project-updates.tanfdata.acf.hhs.gov/](https://tdp-project-updates.tanfdata.acf.hhs.gov/) domain.
 
 ## Review process
 
