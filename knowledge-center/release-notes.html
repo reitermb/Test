@@ -424,9 +424,9 @@
               </div>
                 <div class="usa-icon-list__content">
               <h5 class="usa-icon-list__title">
-                TANF & SSP Data Files pages have been updated with a more efficient view of Current Submission & Submission History 
+                TANF & SSP Data Files pages have been updated with a simpler view of Current Submission & Submission History 
               </h5>
-              <p>This update increases consistency within TDP by adopting the newer data file submission interface first piloted with FRA Data Submission. The new view combines the previous Current Submission and Submission History tabs into a single more efficient view to provide more real-time data after a submission and reduce the number of steps needed to download error reports.</p>
+              <p>This update increases consistency within TDP by adopting the newer data file submission interface first piloted with FRA Data Submission. This updated view combines the previous Current Submission and Submission History tabs into a single view to provide easier access to submission feedback, including any system-generated error reports.</p>
             </div>
           </li>
   <li class="usa-icon-list__item" style="margin-top: 16px;">
@@ -436,9 +436,10 @@
               </div>
                 <div class="usa-icon-list__content">
               <h5 class="usa-icon-list__title">
-                Trailer record length will no longer be checked
+                Trailer record length check removed
               </h5>
-              <p>The Trailer record of a data file contains metadata about the total number of records in the file. Since the Trailer record complying to its expected length is not required for processing any of the case related records within a file we've removed this check from TDP to focus error reports on more impactful data issues. If you've recently received an error report containing a Trailer length error you can expect to receive a notification that your file(s) have been reprocessed and a new error report not containing this error.</p>
+              <p>The trailer record of a data file contains metadata, including the total number of records in the file. Because the trailer record's length does not affect TDP's ability to process the records in a file, this check has been removed to focus error reports on more impactful data issues.<br><br>
+              If you previously received an error report containing a trailer record length error (e.g., "TRAILER: record length is [X] characters but must be 23"), we will reprocess the affected file(s) and you will receive an automated notification once reprocessing is complete. If a new error report is generated, it will not include this error.</p>
             </div>
           </li>
           <!-- <li class="usa-icon-list__item" style="margin-top: 16px;">

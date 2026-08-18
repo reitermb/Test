@@ -216,6 +216,12 @@
     "tags": ["help","bug","contact","support","get help"]
   },
         {
+    "title": "When You Have No Caseload or Records To Submit",
+    "url": "when-you-have-no-data.html",
+    "content": "If your program has no caseload or other records to report for a month or quarter, follow the steps below. Do not follow these steps if you have records to report but plan to submit them at a later date...",
+    "tags": ["zero cases","no caseload","no records","zero records","submission"]
+  },
+        {
     "title": "Release Notes",
     "url": "release-notes.html",
     "content": "Find out what's new in TDP and look up all past improvements",
