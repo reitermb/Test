@@ -412,6 +412,49 @@
           We keep a running log of new features, bug fixes, and other ongoing work aimed at improving your experience.
         </p>
 
+         <hr class="releaseHr">
+<h2 style="margin-top: 32px;" id="aug172026">August 17, 2026 (v 4.23.0)</h2>
+       <h3 style="margin-top: 16px; color: #595959;">Changed/Fixed:</h3>
+
+           <ul class="usa-icon-list">
+          <li class="usa-icon-list__item" style="margin-top: 16px;">
+            <div class="usa-icon-list__icon text-ink">
+                <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 36px; margin-left: 5px;"/>
+  
+              </div>
+                <div class="usa-icon-list__content">
+              <h5 class="usa-icon-list__title">
+                TANF & SSP Data Files pages have been updated with a more efficient view of Current Submission & Submission History 
+              </h5>
+              <p>This update increases consistency within TDP by adopting the newer data file submission interface first piloted with FRA Data Submission. The new view combines the previous Current Submission and Submission History tabs into a single more efficient view to provide more real-time data after a submission and reduce the number of steps needed to download error reports.</p>
+            </div>
+          </li>
+  <li class="usa-icon-list__item" style="margin-top: 16px;">
+            <div class="usa-icon-list__icon text-ink">
+                <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 20px; margin-left: 5px;"/>
+  
+              </div>
+                <div class="usa-icon-list__content">
+              <h5 class="usa-icon-list__title">
+                Trailer record length will no longer be checked
+              </h5>
+              <p>The Trailer record of a data file contains metadata about the total number of records in the file. Since the Trailer record complying to its expected length is not required for processing any of the case related records within a file we've removed this check from TDP to focus error reports on more impactful data issues. If you've recently received an error report containing a Trailer length error you can expect to receive a notification that your file(s) have been reprocessed and a new error report not containing this error.</p>
+            </div>
+          </li>
+          <!-- <li class="usa-icon-list__item" style="margin-top: 16px;">
+            <div class="usa-icon-list__icon text-ink">
+                <img src="../img/changed.svg" aria-hidden="true" alt="" style="background-color: #b3e2ff; border-radius: 5px; width: 18px; height: 18px; position: relative; top: 2px; margin-right: 20px; margin-left: 5px;"/>
+  
+              </div>
+                <div class="usa-icon-list__content">
+              <h5 class="usa-icon-list__title">
+                The Knowledge Center URL has been updated 
+              </h5>
+              <p> The TDP Knowledge Center has a new web address under the tanfdata.acf.hhs.gov domain. Existing links and bookmarks will automatically redirect to the new URL, so no action is required. This change only affects the web address. All Knowledge Center content and functionality remain the same.</p>
+            </div>
+          </li> -->
+          </ul>
+
     <hr class="releaseHr">
 
      <h2 style="margin-top: 32px;" id="july242026">July 24, 2026 (v 4.21.0)</h2>

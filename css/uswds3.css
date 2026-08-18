@@ -37,6 +37,12 @@
   }
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
   /* The Outer Container (The Window) */
 .email-window {;
   background: #ffffff;
