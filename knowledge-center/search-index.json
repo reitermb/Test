@@ -221,6 +221,12 @@
     "content": "If your program has no caseload or other records to report for a month or quarter, follow the steps below. Do not follow these steps if you have records to report but plan to submit them at a later date...",
     "tags": ["zero cases","no caseload","no records","zero records","submission"]
   },
+          {
+    "title": "Reporting Due Dates",
+    "url": "reporting-due-dates.html",
+    "content": " This page provides the quarterly reporting deadlines for reports submitted through the TANF Data Portal (TDP).",
+    "tags": ["due dates","when is data due","deadlines","quarterly","fra","TANF","SSP","Tribal TANF"]
+  },
         {
     "title": "Release Notes",
     "url": "release-notes.html",

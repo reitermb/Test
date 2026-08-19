@@ -174,6 +174,7 @@
           <p><strong>Jump to:</strong></p>
           <ul>
             <li><a href="#what">What To Do</a></li>
+            <li><a href="#example">Example Files</a></li>
             <li><a href="#confirm">Confirming Your Submission</a> </li>
             <li><a href="#477">Guidance for 477 Tribal TANF Programs</a></li>
           </ul>
@@ -185,31 +186,129 @@
           <table>
             <thead>
               <tr>
-                <th>Situation</th>
-                <th>What to do</th>
+                <th>If...</th>
+                <th>Then...</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Your program had no caseload for the entire quarter</strong></td>
-                <td>Submit the applicable required file with no data records. Use one of the example files below and
-                  update the calendar quarter and STT code in the header record before submitting.</td>
+                <td><strong>A required file has no records for any month in the quarter</strong></td>
+                <td>Download the applicable example file, update its header as explained below, and submit it through TDP. The example contains only a header and trailer because there are no data records to include.</td>
               </tr>
               <tr>
-                <td><strong>Your program had no caseload for one or more months within the quarter</strong></td>
+                <td><strong>Your program had no caseload for one or more months, but not the entire quarter</strong></td>
                 <td>Email the <strong>TANF Data Team</strong> at <a
-                    href="mailto:TANFData@acf.hhs.gov">TANFData@acf.hhs.gov</a>. Include your State, Territory, or
-                  Tribe, fiscal year, quarter, reporting section, and the month or months with no caseload.</td>
-              </tr>
-              <tr>
-                <td><strong>A required file has no records to report</strong></td>
-                <td>Submit the applicable required file with no data records. For example, submit a closed case file
-                  with no data records if your program had no closed cases during the reporting period.</td>
+                    href="mailto:TANFData@acf.hhs.gov">TANFData@acf.hhs.gov</a>. Include your state, territory, or
+                  Tribe; fiscal year & quarter; reporting section; and the month or months with no caseload.</td>
               </tr>
             </tbody>
           </table>
+          <hr class="releaseHr" style="margin-bottom: 30px;">
+ <h2 id="example">Example Files</h2>
+ <p>The fields in each example follow the <a href="https://acf.gov/sites/default/files/documents/ofa/transmission_file_header_trailer_record.pdf">Transmission File Header and Trailer Record Layout</a>. Use the state or territory example or the tribal example, as applicable, and update the fields identified below.</p>
+           <div style="min-height: 22px;"></div>
 
+ <h3>Example for a state or territory</h3>
+ <p>The <a href="SSP_active_FY26Q1_empty.txt" download>SSP_active_FY26Q1_empty.txt</a> represents an SSP Active Case submission for California for FY2026 Q1. It contains only a header and trailer record.</p>
+           <div style="min-height: 22px;"></div>
 
+ <p>The header record is: <br><br><code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8;">HEADER20254A06000SSP1 D</code></p>
+   
+   
+     <div style="min-height: 22px;"></div>
+ <table class="usa-table">
+  <thead>
+    <tr>
+      <th scope="col">Header value</th>
+      <th scope="col">What it represents</th>
+      <th scope="col">What to do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>20254</code></td>
+      <td>Calendar quarter for FY2026 Q1</td>
+      <td>Replace it with the calendar quarter for your submission.</td>
+    </tr>
+    <tr>
+      <td><code>A</code></td>
+      <td>Reporting section</td>
+      <td>
+        Enter <code>A</code> for Active, <code>C</code> for Closed, <code>G</code> for Aggregate, or <code>S</code> for Stratum, as defined in the <a href="https://acf.gov/sites/default/files/documents/ofa/transmission_file_header_trailer_record.pdf">Transmission File Header and Trailer Record Layout</a>.
+      </td>
+    </tr>
+    <tr>
+      <td><code>06</code></td>
+      <td>California’s state FIPS code</td>
+      <td>
+        Replace it with the value under <code>STT_CODE</code> for your <a href="https://github.com/HHS/TANF-app/blob/main/tdrs-backend/tdpservice/stts/management/commands/data/states.csv">state</a> or <a href="https://github.com/HHS/TANF-app/blob/main/tdrs-backend/tdpservice/stts/management/commands/data/territories.csv">territory</a>.
+      </td>
+    </tr>
+    <tr>
+      <td><code>000</code></td>
+      <td>Tribe code</td>
+      <td>
+        For a state or territory submission, leave this field as three blank spaces or enter <code>000</code>, as permitted by the record layout.
+      </td>
+    </tr>
+    <tr>
+      <td><code>SSP</code></td>
+      <td>Program type</td>
+      <td>
+        Enter <code>SSP</code> when submitting SSP data or <code>TAN</code> when submitting TANF data.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <h3>Example for Tribes</h3>
+ <p>The <a href="Tribal_TANF_active_FY26Q1_empty.txt" download>Tribal_TANF_active_FY26Q1_empty.txt</a> represents an Active Tribal TANF submission for the Red Lake Band of Chippewa Indians for FY2026 Q1. It contains only a header and trailer record.</p>
+ <div style="min-height: 22px;"></div>
+
+ <p>The header record is: <br><br><code style="border-left: solid 5px; border-color: #005ea2; padding: 8px; background-color: #f8f8f8;">HEADER20254A00234TAN1 D</code></p>
+   
+<table class="usa-table">
+  <thead>
+    <tr>
+      <th scope="col">Header value</th>
+      <th scope="col">What it represents</th>
+      <th scope="col">What to do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>20254</code></td>
+      <td>Calendar quarter for FY2026 Q1</td>
+      <td>Replace it with the calendar quarter for your submission.</td>
+    </tr>
+    <tr>
+      <td><code>A</code></td>
+      <td>Reporting section</td>
+      <td>
+        Enter <code>A</code> for Active, <code>C</code> for Closed, or <code>G</code> for Aggregate.
+      </td>
+    </tr>
+    <tr>
+      <td><code>00</code></td>
+      <td>State FIPS code</td>
+      <td>
+        Enter <code>00</code> or two blank spaces, as permitted by the <a href="https://acf.gov/sites/default/files/documents/ofa/transmission_file_header_trailer_record.pdf">Transmission File Header and Trailer Record Layout</a>.
+      </td>
+    </tr>
+    <tr>
+      <td><code>234</code></td>
+      <td>Red Lake Band of Chippewa Indians’ tribe code</td>
+      <td>
+        Replace it with the three-digit value under <code>STT_CODE</code> in the <a href="https://github.com/HHS/TANF-app/blob/main/tdrs-backend/tdpservice/stts/management/commands/data/tribes.csv">Tribal TANF program list</a>.
+      </td>
+    </tr>
+    <tr>
+      <td><code>TAN</code></td>
+      <td>TANF program type</td>
+      <td>Do not change this value for a Tribal TANF submission.</td>
+    </tr>
+  </tbody>
+</table>
 
           <hr class="releaseHr" style="margin-bottom: 30px;">
 

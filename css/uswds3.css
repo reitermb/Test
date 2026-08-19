@@ -42,6 +42,11 @@ html {
   scroll-behavior: smooth;
 }
 
+code {
+  background-color: #f8f8f8;
+  padding:8px;
+}
+
 
   /* The Outer Container (The Window) */
 .email-window {;
